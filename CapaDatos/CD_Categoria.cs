@@ -50,7 +50,7 @@ namespace CapaDatos
             }
 
             return lista;
-
+            
         }
         public int Registrar(Categoria obj, out string Mensaje)
         {
