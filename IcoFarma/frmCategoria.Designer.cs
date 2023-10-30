@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtindice = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.txtid = new System.Windows.Forms.TextBox();
@@ -64,7 +64,7 @@
             // txtindice
             // 
             this.txtindice.Location = new System.Drawing.Point(253, 32);
-            this.txtindice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtindice.Margin = new System.Windows.Forms.Padding(4);
             this.txtindice.Name = "txtindice";
             this.txtindice.Size = new System.Drawing.Size(33, 22);
             this.txtindice.TabIndex = 55;
@@ -87,7 +87,7 @@
             // txtid
             // 
             this.txtid.Location = new System.Drawing.Point(296, 32);
-            this.txtid.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtid.Margin = new System.Windows.Forms.Padding(4);
             this.txtid.Name = "txtid";
             this.txtid.Size = new System.Drawing.Size(33, 22);
             this.txtid.TabIndex = 49;
@@ -103,7 +103,7 @@
             this.label10.Location = new System.Drawing.Point(384, 26);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(1008, 70);
+            this.label10.Size = new System.Drawing.Size(1113, 70);
             this.label10.TabIndex = 48;
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -146,20 +146,20 @@
             // dgvdata
             // 
             this.dgvdata.AllowUserToAddRows = false;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            this.dgvdata.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            this.dgvdata.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvdata.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
             this.dgvdata.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvdata.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(86)))), ((int)(((byte)(78)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvdata.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(86)))), ((int)(((byte)(78)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvdata.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvdata.ColumnHeadersHeight = 50;
             this.dgvdata.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.btnseleccionar,
@@ -167,42 +167,42 @@
             this.Descripcion,
             this.EstadoValor,
             this.Estado});
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(226)))), ((int)(((byte)(244)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvdata.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(226)))), ((int)(((byte)(244)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvdata.DefaultCellStyle = dataGridViewCellStyle4;
             this.dgvdata.DoubleBuffered = true;
             this.dgvdata.EnableHeadersVisualStyles = false;
             this.dgvdata.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
             this.dgvdata.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(86)))), ((int)(((byte)(78)))));
             this.dgvdata.HeaderForeColor = System.Drawing.Color.White;
             this.dgvdata.Location = new System.Drawing.Point(384, 117);
-            this.dgvdata.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvdata.Margin = new System.Windows.Forms.Padding(4);
             this.dgvdata.Name = "dgvdata";
             this.dgvdata.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgvdata.RowHeadersVisible = false;
             this.dgvdata.RowHeadersWidth = 51;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.dgvdata.RowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.dgvdata.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvdata.RowTemplate.DividerHeight = 1;
             this.dgvdata.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvdata.Size = new System.Drawing.Size(1008, 386);
+            this.dgvdata.Size = new System.Drawing.Size(1101, 386);
             this.dgvdata.TabIndex = 58;
             this.dgvdata.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvdata_CellContentClick_1);
             this.dgvdata.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvdata_CellPainting_1);
             // 
             // btnseleccionar
             // 
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.btnseleccionar.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.btnseleccionar.DefaultCellStyle = dataGridViewCellStyle3;
             this.btnseleccionar.FillWeight = 57.07051F;
             this.btnseleccionar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnseleccionar.HeaderText = "";
@@ -274,7 +274,7 @@
             this.txtdescripcion.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtdescripcion.HoveredState.Parent = this.txtdescripcion;
             this.txtdescripcion.Location = new System.Drawing.Point(21, 201);
-            this.txtdescripcion.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtdescripcion.Margin = new System.Windows.Forms.Padding(5);
             this.txtdescripcion.Name = "txtdescripcion";
             this.txtdescripcion.PasswordChar = '\0';
             this.txtdescripcion.PlaceholderText = "Descripcion";
@@ -299,7 +299,7 @@
             this.cboestadox.ItemHeight = 30;
             this.cboestadox.ItemsAppearance.Parent = this.cboestadox;
             this.cboestadox.Location = new System.Drawing.Point(21, 369);
-            this.cboestadox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboestadox.Margin = new System.Windows.Forms.Padding(4);
             this.cboestadox.Name = "cboestadox";
             this.cboestadox.ShadowDecoration.Parent = this.cboestadox;
             this.cboestadox.Size = new System.Drawing.Size(288, 36);
@@ -315,11 +315,11 @@
             this.btnBuscar.ForeColor = System.Drawing.Color.White;
             this.btnBuscar.HoveredState.Parent = this.btnBuscar;
             this.btnBuscar.Image = global::IcoFarma.Properties.Resources.Search;
-            this.btnBuscar.Location = new System.Drawing.Point(1260, 39);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBuscar.Location = new System.Drawing.Point(1363, 39);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.ShadowDecoration.Parent = this.btnBuscar;
-            this.btnBuscar.Size = new System.Drawing.Size(57, 44);
+            this.btnBuscar.Size = new System.Drawing.Size(57, 36);
             this.btnBuscar.TabIndex = 77;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click_1);
             // 
@@ -333,11 +333,11 @@
             this.btnLimpar.ForeColor = System.Drawing.Color.White;
             this.btnLimpar.HoveredState.Parent = this.btnLimpar;
             this.btnLimpar.Image = global::IcoFarma.Properties.Resources.Broom;
-            this.btnLimpar.Location = new System.Drawing.Point(1325, 39);
-            this.btnLimpar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLimpar.Location = new System.Drawing.Point(1428, 39);
+            this.btnLimpar.Margin = new System.Windows.Forms.Padding(4);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.ShadowDecoration.Parent = this.btnLimpar;
-            this.btnLimpar.Size = new System.Drawing.Size(57, 44);
+            this.btnLimpar.Size = new System.Drawing.Size(57, 36);
             this.btnLimpar.TabIndex = 78;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
@@ -359,14 +359,14 @@
             this.txtbusqueda.ForeColor = System.Drawing.Color.White;
             this.txtbusqueda.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtbusqueda.HoveredState.Parent = this.txtbusqueda;
-            this.txtbusqueda.Location = new System.Drawing.Point(1119, 39);
-            this.txtbusqueda.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtbusqueda.Location = new System.Drawing.Point(1221, 39);
+            this.txtbusqueda.Margin = new System.Windows.Forms.Padding(5);
             this.txtbusqueda.Name = "txtbusqueda";
             this.txtbusqueda.PasswordChar = '\0';
             this.txtbusqueda.PlaceholderText = "Busca Aqui";
             this.txtbusqueda.SelectedText = "";
             this.txtbusqueda.ShadowDecoration.Parent = this.txtbusqueda;
-            this.txtbusqueda.Size = new System.Drawing.Size(133, 44);
+            this.txtbusqueda.Size = new System.Drawing.Size(133, 36);
             this.txtbusqueda.TabIndex = 79;
             // 
             // cbobusqueda
@@ -384,8 +384,8 @@
             this.cbobusqueda.HoveredState.Parent = this.cbobusqueda;
             this.cbobusqueda.ItemHeight = 30;
             this.cbobusqueda.ItemsAppearance.Parent = this.cbobusqueda;
-            this.cbobusqueda.Location = new System.Drawing.Point(941, 39);
-            this.cbobusqueda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbobusqueda.Location = new System.Drawing.Point(1044, 39);
+            this.cbobusqueda.Margin = new System.Windows.Forms.Padding(4);
             this.cbobusqueda.Name = "cbobusqueda";
             this.cbobusqueda.ShadowDecoration.Parent = this.cbobusqueda;
             this.cbobusqueda.Size = new System.Drawing.Size(168, 36);
@@ -402,7 +402,7 @@
             this.btnLimpiar.HoveredState.Parent = this.btnLimpiar;
             this.btnLimpiar.Image = global::IcoFarma.Properties.Resources.Broom1;
             this.btnLimpiar.Location = new System.Drawing.Point(21, 656);
-            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(4);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.ShadowDecoration.Parent = this.btnLimpiar;
             this.btnLimpiar.Size = new System.Drawing.Size(289, 44);
@@ -421,7 +421,7 @@
             this.btnEliminar.HoveredState.Parent = this.btnEliminar;
             this.btnEliminar.Image = global::IcoFarma.Properties.Resources.Delete_Trash;
             this.btnEliminar.Location = new System.Drawing.Point(21, 708);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.ShadowDecoration.Parent = this.btnEliminar;
             this.btnEliminar.Size = new System.Drawing.Size(289, 44);
@@ -440,7 +440,7 @@
             this.btnGuardar.HoveredState.Parent = this.btnGuardar;
             this.btnGuardar.Image = global::IcoFarma.Properties.Resources.Save;
             this.btnGuardar.Location = new System.Drawing.Point(21, 604);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.ShadowDecoration.Parent = this.btnGuardar;
             this.btnGuardar.Size = new System.Drawing.Size(289, 44);
@@ -453,7 +453,7 @@
             this.siticonePictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(61)))), ((int)(((byte)(61)))));
             this.siticonePictureBox1.Image = global::IcoFarma.Properties.Resources.Diversity1;
             this.siticonePictureBox1.Location = new System.Drawing.Point(389, 32);
-            this.siticonePictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.siticonePictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.siticonePictureBox1.Name = "siticonePictureBox1";
             this.siticonePictureBox1.ShadowDecoration.Parent = this.siticonePictureBox1;
             this.siticonePictureBox1.Size = new System.Drawing.Size(56, 55);
@@ -484,7 +484,7 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmCategoria";
             this.Text = "frmCategoria";
             this.Load += new System.EventHandler(this.frmCategoria_Load);
