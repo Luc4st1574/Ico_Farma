@@ -40,14 +40,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvdata = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.btnseleccionar = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Documento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NombreCompleto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Correo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.EstadoValor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtdocumento = new Siticone.UI.WinForms.SiticoneRoundedTextBox();
             this.cbobusqueda = new Siticone.UI.WinForms.SiticoneRoundedComboBox();
             this.txtbusqueda = new Siticone.UI.WinForms.SiticoneRoundedTextBox();
@@ -63,6 +55,14 @@
             this.label8 = new System.Windows.Forms.Label();
             this.cboestado = new Siticone.UI.WinForms.SiticoneRoundedComboBox();
             this.btnDNI = new Siticone.UI.WinForms.SiticoneRoundedButton();
+            this.btnseleccionar = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Documento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NombreCompleto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Correo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EstadoValor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdata)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -70,7 +70,7 @@
             // txtindice
             // 
             this.txtindice.Location = new System.Drawing.Point(248, 31);
-            this.txtindice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtindice.Margin = new System.Windows.Forms.Padding(4);
             this.txtindice.Name = "txtindice";
             this.txtindice.Size = new System.Drawing.Size(33, 22);
             this.txtindice.TabIndex = 80;
@@ -80,7 +80,7 @@
             // txtid
             // 
             this.txtid.Location = new System.Drawing.Point(291, 31);
-            this.txtid.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtid.Margin = new System.Windows.Forms.Padding(4);
             this.txtid.Name = "txtid";
             this.txtid.Size = new System.Drawing.Size(33, 22);
             this.txtid.TabIndex = 74;
@@ -166,7 +166,7 @@
             this.dgvdata.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(86)))), ((int)(((byte)(78)))));
             this.dgvdata.HeaderForeColor = System.Drawing.Color.White;
             this.dgvdata.Location = new System.Drawing.Point(392, 124);
-            this.dgvdata.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvdata.Margin = new System.Windows.Forms.Padding(4);
             this.dgvdata.Name = "dgvdata";
             this.dgvdata.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgvdata.RowHeadersVisible = false;
@@ -179,76 +179,6 @@
             this.dgvdata.TabIndex = 93;
             this.dgvdata.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvdata_CellContentClick_2);
             this.dgvdata.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvdata_CellPainting_1);
-            // 
-            // btnseleccionar
-            // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.btnseleccionar.DefaultCellStyle = dataGridViewCellStyle3;
-            this.btnseleccionar.FillWeight = 57.07051F;
-            this.btnseleccionar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnseleccionar.HeaderText = "";
-            this.btnseleccionar.MinimumWidth = 6;
-            this.btnseleccionar.Name = "btnseleccionar";
-            this.btnseleccionar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.btnseleccionar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.btnseleccionar.Width = 25;
-            // 
-            // Id
-            // 
-            this.Id.HeaderText = "Id";
-            this.Id.MinimumWidth = 6;
-            this.Id.Name = "Id";
-            this.Id.Visible = false;
-            this.Id.Width = 125;
-            // 
-            // Documento
-            // 
-            this.Documento.FillWeight = 83.89366F;
-            this.Documento.HeaderText = "Nro Documento";
-            this.Documento.MinimumWidth = 6;
-            this.Documento.Name = "Documento";
-            this.Documento.ReadOnly = true;
-            this.Documento.Width = 120;
-            // 
-            // NombreCompleto
-            // 
-            this.NombreCompleto.HeaderText = "Nombre";
-            this.NombreCompleto.MinimumWidth = 6;
-            this.NombreCompleto.Name = "NombreCompleto";
-            this.NombreCompleto.Width = 120;
-            // 
-            // Correo
-            // 
-            this.Correo.HeaderText = "Correo";
-            this.Correo.MinimumWidth = 6;
-            this.Correo.Name = "Correo";
-            this.Correo.Width = 120;
-            // 
-            // Telefono
-            // 
-            this.Telefono.HeaderText = "Telefono";
-            this.Telefono.MinimumWidth = 6;
-            this.Telefono.Name = "Telefono";
-            this.Telefono.Width = 120;
-            // 
-            // EstadoValor
-            // 
-            this.EstadoValor.HeaderText = "EstadoValor";
-            this.EstadoValor.MinimumWidth = 6;
-            this.EstadoValor.Name = "EstadoValor";
-            this.EstadoValor.Visible = false;
-            this.EstadoValor.Width = 125;
-            // 
-            // Estado
-            // 
-            this.Estado.HeaderText = "Estado";
-            this.Estado.MinimumWidth = 6;
-            this.Estado.Name = "Estado";
-            this.Estado.Width = 120;
             // 
             // txtdocumento
             // 
@@ -269,7 +199,7 @@
             this.txtdocumento.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtdocumento.HoveredState.Parent = this.txtdocumento;
             this.txtdocumento.Location = new System.Drawing.Point(24, 124);
-            this.txtdocumento.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtdocumento.Margin = new System.Windows.Forms.Padding(5);
             this.txtdocumento.Name = "txtdocumento";
             this.txtdocumento.PasswordChar = '\0';
             this.txtdocumento.PlaceholderText = "Nro Documento";
@@ -294,7 +224,7 @@
             this.cbobusqueda.ItemHeight = 30;
             this.cbobusqueda.ItemsAppearance.Parent = this.cbobusqueda;
             this.cbobusqueda.Location = new System.Drawing.Point(787, 53);
-            this.cbobusqueda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbobusqueda.Margin = new System.Windows.Forms.Padding(4);
             this.cbobusqueda.Name = "cbobusqueda";
             this.cbobusqueda.ShadowDecoration.Parent = this.cbobusqueda;
             this.cbobusqueda.Size = new System.Drawing.Size(168, 36);
@@ -319,7 +249,7 @@
             this.txtbusqueda.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtbusqueda.HoveredState.Parent = this.txtbusqueda;
             this.txtbusqueda.Location = new System.Drawing.Point(964, 53);
-            this.txtbusqueda.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtbusqueda.Margin = new System.Windows.Forms.Padding(5);
             this.txtbusqueda.Name = "txtbusqueda";
             this.txtbusqueda.PasswordChar = '\0';
             this.txtbusqueda.PlaceholderText = "Busca Aqui";
@@ -333,7 +263,7 @@
             this.siticonePictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(61)))), ((int)(((byte)(61)))));
             this.siticonePictureBox1.Image = global::IcoFarma.Properties.Resources.Sick1;
             this.siticonePictureBox1.Location = new System.Drawing.Point(409, 42);
-            this.siticonePictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.siticonePictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.siticonePictureBox1.Name = "siticonePictureBox1";
             this.siticonePictureBox1.ShadowDecoration.Parent = this.siticonePictureBox1;
             this.siticonePictureBox1.Size = new System.Drawing.Size(67, 55);
@@ -351,7 +281,7 @@
             this.btnGuardar.HoveredState.Parent = this.btnGuardar;
             this.btnGuardar.Image = global::IcoFarma.Properties.Resources.Save;
             this.btnGuardar.Location = new System.Drawing.Point(24, 598);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.ShadowDecoration.Parent = this.btnGuardar;
             this.btnGuardar.Size = new System.Drawing.Size(289, 44);
@@ -370,7 +300,7 @@
             this.btnEliminar.HoveredState.Parent = this.btnEliminar;
             this.btnEliminar.Image = global::IcoFarma.Properties.Resources.Delete_Trash;
             this.btnEliminar.Location = new System.Drawing.Point(24, 702);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.ShadowDecoration.Parent = this.btnEliminar;
             this.btnEliminar.Size = new System.Drawing.Size(289, 44);
@@ -389,7 +319,7 @@
             this.btnLimpiar.HoveredState.Parent = this.btnLimpiar;
             this.btnLimpiar.Image = global::IcoFarma.Properties.Resources.Broom1;
             this.btnLimpiar.Location = new System.Drawing.Point(24, 650);
-            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(4);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.ShadowDecoration.Parent = this.btnLimpiar;
             this.btnLimpiar.Size = new System.Drawing.Size(289, 44);
@@ -408,7 +338,7 @@
             this.btnLimpar.HoveredState.Parent = this.btnLimpar;
             this.btnLimpar.Image = global::IcoFarma.Properties.Resources.Broom;
             this.btnLimpar.Location = new System.Drawing.Point(1171, 53);
-            this.btnLimpar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLimpar.Margin = new System.Windows.Forms.Padding(4);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.ShadowDecoration.Parent = this.btnLimpar;
             this.btnLimpar.Size = new System.Drawing.Size(57, 44);
@@ -426,7 +356,7 @@
             this.btnBuscar.HoveredState.Parent = this.btnBuscar;
             this.btnBuscar.Image = global::IcoFarma.Properties.Resources.Search;
             this.btnBuscar.Location = new System.Drawing.Point(1105, 53);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.ShadowDecoration.Parent = this.btnBuscar;
             this.btnBuscar.Size = new System.Drawing.Size(57, 44);
@@ -452,7 +382,7 @@
             this.txtnombrecompleto.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtnombrecompleto.HoveredState.Parent = this.txtnombrecompleto;
             this.txtnombrecompleto.Location = new System.Drawing.Point(24, 210);
-            this.txtnombrecompleto.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtnombrecompleto.Margin = new System.Windows.Forms.Padding(5);
             this.txtnombrecompleto.Name = "txtnombrecompleto";
             this.txtnombrecompleto.PasswordChar = '\0';
             this.txtnombrecompleto.PlaceholderText = "Nombre";
@@ -480,7 +410,7 @@
             this.txtcorreo.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtcorreo.HoveredState.Parent = this.txtcorreo;
             this.txtcorreo.Location = new System.Drawing.Point(24, 283);
-            this.txtcorreo.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtcorreo.Margin = new System.Windows.Forms.Padding(5);
             this.txtcorreo.Name = "txtcorreo";
             this.txtcorreo.PasswordChar = '\0';
             this.txtcorreo.PlaceholderText = "Correo";
@@ -508,7 +438,7 @@
             this.txttelefono.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txttelefono.HoveredState.Parent = this.txttelefono;
             this.txttelefono.Location = new System.Drawing.Point(24, 359);
-            this.txttelefono.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txttelefono.Margin = new System.Windows.Forms.Padding(5);
             this.txttelefono.Name = "txttelefono";
             this.txttelefono.PasswordChar = '\0';
             this.txttelefono.PlaceholderText = "Telefono";
@@ -547,7 +477,7 @@
             this.cboestado.ItemHeight = 30;
             this.cboestado.ItemsAppearance.Parent = this.cboestado;
             this.cboestado.Location = new System.Drawing.Point(24, 471);
-            this.cboestado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboestado.Margin = new System.Windows.Forms.Padding(4);
             this.cboestado.Name = "cboestado";
             this.cboestado.ShadowDecoration.Parent = this.cboestado;
             this.cboestado.Size = new System.Drawing.Size(288, 36);
@@ -564,12 +494,82 @@
             this.btnDNI.HoveredState.Parent = this.btnDNI;
             this.btnDNI.Image = global::IcoFarma.Properties.Resources.Search;
             this.btnDNI.Location = new System.Drawing.Point(256, 124);
-            this.btnDNI.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDNI.Margin = new System.Windows.Forms.Padding(4);
             this.btnDNI.Name = "btnDNI";
             this.btnDNI.ShadowDecoration.Parent = this.btnDNI;
             this.btnDNI.Size = new System.Drawing.Size(57, 44);
             this.btnDNI.TabIndex = 127;
             this.btnDNI.Click += new System.EventHandler(this.btnDNI_Click);
+            // 
+            // btnseleccionar
+            // 
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.btnseleccionar.DefaultCellStyle = dataGridViewCellStyle3;
+            this.btnseleccionar.FillWeight = 57.07051F;
+            this.btnseleccionar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnseleccionar.HeaderText = "";
+            this.btnseleccionar.MinimumWidth = 6;
+            this.btnseleccionar.Name = "btnseleccionar";
+            this.btnseleccionar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.btnseleccionar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.btnseleccionar.Width = 25;
+            // 
+            // Id
+            // 
+            this.Id.HeaderText = "Id";
+            this.Id.MinimumWidth = 6;
+            this.Id.Name = "Id";
+            this.Id.Visible = false;
+            this.Id.Width = 125;
+            // 
+            // Documento
+            // 
+            this.Documento.FillWeight = 83.89366F;
+            this.Documento.HeaderText = "Nro Documento";
+            this.Documento.MinimumWidth = 6;
+            this.Documento.Name = "Documento";
+            this.Documento.ReadOnly = true;
+            this.Documento.Width = 200;
+            // 
+            // NombreCompleto
+            // 
+            this.NombreCompleto.HeaderText = "Nombre";
+            this.NombreCompleto.MinimumWidth = 6;
+            this.NombreCompleto.Name = "NombreCompleto";
+            this.NombreCompleto.Width = 120;
+            // 
+            // Correo
+            // 
+            this.Correo.HeaderText = "Correo";
+            this.Correo.MinimumWidth = 6;
+            this.Correo.Name = "Correo";
+            this.Correo.Width = 120;
+            // 
+            // Telefono
+            // 
+            this.Telefono.HeaderText = "Telefono";
+            this.Telefono.MinimumWidth = 6;
+            this.Telefono.Name = "Telefono";
+            this.Telefono.Width = 120;
+            // 
+            // EstadoValor
+            // 
+            this.EstadoValor.HeaderText = "EstadoValor";
+            this.EstadoValor.MinimumWidth = 6;
+            this.EstadoValor.Name = "EstadoValor";
+            this.EstadoValor.Visible = false;
+            this.EstadoValor.Width = 125;
+            // 
+            // Estado
+            // 
+            this.Estado.HeaderText = "Estado";
+            this.Estado.MinimumWidth = 6;
+            this.Estado.Name = "Estado";
+            this.Estado.Width = 120;
             // 
             // frmClientes
             // 
@@ -599,7 +599,7 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmClientes";
             this.Text = "frmClientes";
             this.Load += new System.EventHandler(this.frmClientes_Load);
@@ -617,14 +617,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label1;
         private Bunifu.Framework.UI.BunifuCustomDataGrid dgvdata;
-        private System.Windows.Forms.DataGridViewButtonColumn btnseleccionar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Documento;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NombreCompleto;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Correo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Telefono;
-        private System.Windows.Forms.DataGridViewTextBoxColumn EstadoValor;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Estado;
         private Siticone.UI.WinForms.SiticoneRoundedTextBox txtdocumento;
         private Siticone.UI.WinForms.SiticoneRoundedComboBox cbobusqueda;
         private Siticone.UI.WinForms.SiticoneRoundedTextBox txtbusqueda;
@@ -640,5 +632,13 @@
         private System.Windows.Forms.Label label8;
         private Siticone.UI.WinForms.SiticoneRoundedComboBox cboestado;
         private Siticone.UI.WinForms.SiticoneRoundedButton btnDNI;
+        private System.Windows.Forms.DataGridViewButtonColumn btnseleccionar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Documento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NombreCompleto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Correo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Telefono;
+        private System.Windows.Forms.DataGridViewTextBoxColumn EstadoValor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Estado;
     }
 }
