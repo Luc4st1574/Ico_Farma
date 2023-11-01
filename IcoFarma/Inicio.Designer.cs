@@ -71,7 +71,7 @@
             this.Menu.Location = new System.Drawing.Point(0, 77);
             this.Menu.Name = "Menu";
             this.Menu.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.Menu.Size = new System.Drawing.Size(1110, 73);
+            this.Menu.Size = new System.Drawing.Size(1904, 73);
             this.Menu.TabIndex = 0;
             this.Menu.Text = "Menu";
             // 
@@ -306,7 +306,7 @@
             this.MenuTitulo.Name = "MenuTitulo";
             this.MenuTitulo.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
             this.MenuTitulo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.MenuTitulo.Size = new System.Drawing.Size(1110, 77);
+            this.MenuTitulo.Size = new System.Drawing.Size(1904, 77);
             this.MenuTitulo.TabIndex = 1;
             this.MenuTitulo.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.MenuTitulo_ItemClicked);
             // 
@@ -328,7 +328,7 @@
             this.Contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Contenedor.Location = new System.Drawing.Point(0, 150);
             this.Contenedor.Name = "Contenedor";
-            this.Contenedor.Size = new System.Drawing.Size(1110, 674);
+            this.Contenedor.Size = new System.Drawing.Size(1904, 891);
             this.Contenedor.TabIndex = 4;
             this.Contenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.Contenedor_Paint);
             // 
@@ -372,7 +372,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1110, 824);
+            this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.lblUsu);
             this.Controls.Add(this.Contenedor);

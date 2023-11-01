@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label10 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -70,10 +70,9 @@
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label10.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.label10.Location = new System.Drawing.Point(16, 11);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Location = new System.Drawing.Point(12, 9);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(1353, 102);
+            this.label10.Size = new System.Drawing.Size(1106, 83);
             this.label10.TabIndex = 21;
             // 
             // label1
@@ -82,10 +81,9 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(61)))), ((int)(((byte)(61)))));
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(135, 48);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(101, 39);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(117, 20);
+            this.label1.Size = new System.Drawing.Size(95, 16);
             this.label1.TabIndex = 22;
             this.label1.Text = "Fecha Inicio:";
             // 
@@ -95,10 +93,9 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(61)))), ((int)(((byte)(61)))));
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(488, 48);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(413, 39);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 20);
+            this.label2.Size = new System.Drawing.Size(79, 16);
             this.label2.TabIndex = 25;
             this.label2.Text = "Fecha Fin:";
             // 
@@ -108,12 +105,12 @@
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(61)))), ((int)(((byte)(61)))));
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(985, 48);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(829, 39);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(100, 20);
+            this.label3.Size = new System.Drawing.Size(84, 16);
             this.label3.TabIndex = 26;
             this.label3.Text = "Proveedor:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // cboproveedor
             // 
@@ -130,12 +127,12 @@
             this.cboproveedor.HoveredState.Parent = this.cboproveedor;
             this.cboproveedor.ItemHeight = 30;
             this.cboproveedor.ItemsAppearance.Parent = this.cboproveedor;
-            this.cboproveedor.Location = new System.Drawing.Point(1105, 38);
-            this.cboproveedor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboproveedor.Location = new System.Drawing.Point(919, 31);
             this.cboproveedor.Name = "cboproveedor";
             this.cboproveedor.ShadowDecoration.Parent = this.cboproveedor;
-            this.cboproveedor.Size = new System.Drawing.Size(185, 36);
+            this.cboproveedor.Size = new System.Drawing.Size(140, 36);
             this.cboproveedor.TabIndex = 70;
+            this.cboproveedor.SelectedIndexChanged += new System.EventHandler(this.cboproveedor_SelectedIndexChanged);
             // 
             // txtbusqueda
             // 
@@ -155,14 +152,14 @@
             this.txtbusqueda.ForeColor = System.Drawing.Color.White;
             this.txtbusqueda.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtbusqueda.HoveredState.Parent = this.txtbusqueda;
-            this.txtbusqueda.Location = new System.Drawing.Point(1105, 128);
-            this.txtbusqueda.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtbusqueda.Location = new System.Drawing.Point(919, 104);
+            this.txtbusqueda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtbusqueda.Name = "txtbusqueda";
             this.txtbusqueda.PasswordChar = '\0';
             this.txtbusqueda.PlaceholderText = "Busca Aqui";
             this.txtbusqueda.SelectedText = "";
             this.txtbusqueda.ShadowDecoration.Parent = this.txtbusqueda;
-            this.txtbusqueda.Size = new System.Drawing.Size(133, 44);
+            this.txtbusqueda.Size = new System.Drawing.Size(100, 36);
             this.txtbusqueda.TabIndex = 71;
             // 
             // txtfechafin
@@ -175,13 +172,12 @@
             this.txtfechafin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtfechafin.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.txtfechafin.HoveredState.Parent = this.txtfechafin;
-            this.txtfechafin.Location = new System.Drawing.Point(601, 38);
-            this.txtfechafin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtfechafin.Location = new System.Drawing.Point(511, 31);
             this.txtfechafin.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.txtfechafin.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.txtfechafin.Name = "txtfechafin";
             this.txtfechafin.ShadowDecoration.Parent = this.txtfechafin;
-            this.txtfechafin.Size = new System.Drawing.Size(175, 44);
+            this.txtfechafin.Size = new System.Drawing.Size(148, 36);
             this.txtfechafin.TabIndex = 72;
             this.txtfechafin.Value = new System.DateTime(2023, 10, 28, 0, 0, 0, 0);
             // 
@@ -195,11 +191,10 @@
             this.btnBuscar.ForeColor = System.Drawing.Color.White;
             this.btnBuscar.HoveredState.Parent = this.btnBuscar;
             this.btnBuscar.Image = global::IcoFarma.Properties.Resources.Search;
-            this.btnBuscar.Location = new System.Drawing.Point(1300, 38);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBuscar.Location = new System.Drawing.Point(1065, 31);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.ShadowDecoration.Parent = this.btnBuscar;
-            this.btnBuscar.Size = new System.Drawing.Size(57, 44);
+            this.btnBuscar.Size = new System.Drawing.Size(43, 36);
             this.btnBuscar.TabIndex = 74;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click_1);
             // 
@@ -213,13 +208,12 @@
             this.txtfechainicio.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtfechainicio.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.txtfechainicio.HoveredState.Parent = this.txtfechainicio;
-            this.txtfechainicio.Location = new System.Drawing.Point(269, 38);
-            this.txtfechainicio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtfechainicio.Location = new System.Drawing.Point(215, 31);
             this.txtfechainicio.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.txtfechainicio.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.txtfechainicio.Name = "txtfechainicio";
             this.txtfechainicio.ShadowDecoration.Parent = this.txtfechainicio;
-            this.txtfechainicio.Size = new System.Drawing.Size(175, 44);
+            this.txtfechainicio.Size = new System.Drawing.Size(148, 36);
             this.txtfechainicio.TabIndex = 75;
             this.txtfechainicio.Value = new System.DateTime(2023, 10, 28, 0, 0, 0, 0);
             // 
@@ -233,11 +227,10 @@
             this.btnBusqueda.ForeColor = System.Drawing.Color.White;
             this.btnBusqueda.HoveredState.Parent = this.btnBusqueda;
             this.btnBusqueda.Image = global::IcoFarma.Properties.Resources.Search;
-            this.btnBusqueda.Location = new System.Drawing.Point(1247, 128);
-            this.btnBusqueda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBusqueda.Location = new System.Drawing.Point(1025, 104);
             this.btnBusqueda.Name = "btnBusqueda";
             this.btnBusqueda.ShadowDecoration.Parent = this.btnBusqueda;
-            this.btnBusqueda.Size = new System.Drawing.Size(57, 44);
+            this.btnBusqueda.Size = new System.Drawing.Size(43, 36);
             this.btnBusqueda.TabIndex = 76;
             this.btnBusqueda.Click += new System.EventHandler(this.btnBusqueda_Click);
             // 
@@ -251,11 +244,10 @@
             this.btnLimparBusqueda.ForeColor = System.Drawing.Color.White;
             this.btnLimparBusqueda.HoveredState.Parent = this.btnLimparBusqueda;
             this.btnLimparBusqueda.Image = global::IcoFarma.Properties.Resources.Broom;
-            this.btnLimparBusqueda.Location = new System.Drawing.Point(1312, 128);
-            this.btnLimparBusqueda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLimparBusqueda.Location = new System.Drawing.Point(1074, 104);
             this.btnLimparBusqueda.Name = "btnLimparBusqueda";
             this.btnLimparBusqueda.ShadowDecoration.Parent = this.btnLimparBusqueda;
-            this.btnLimparBusqueda.Size = new System.Drawing.Size(57, 44);
+            this.btnLimparBusqueda.Size = new System.Drawing.Size(43, 36);
             this.btnLimparBusqueda.TabIndex = 77;
             this.btnLimparBusqueda.Click += new System.EventHandler(this.btnLimparBusqueda_Click_1);
             // 
@@ -274,30 +266,29 @@
             this.cbobusqueda.HoveredState.Parent = this.cbobusqueda;
             this.cbobusqueda.ItemHeight = 30;
             this.cbobusqueda.ItemsAppearance.Parent = this.cbobusqueda;
-            this.cbobusqueda.Location = new System.Drawing.Point(911, 128);
-            this.cbobusqueda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbobusqueda.Location = new System.Drawing.Point(773, 104);
             this.cbobusqueda.Name = "cbobusqueda";
             this.cbobusqueda.ShadowDecoration.Parent = this.cbobusqueda;
-            this.cbobusqueda.Size = new System.Drawing.Size(185, 36);
+            this.cbobusqueda.Size = new System.Drawing.Size(140, 36);
             this.cbobusqueda.TabIndex = 79;
             // 
             // dgvdata
             // 
             this.dgvdata.AllowUserToAddRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            this.dgvdata.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            this.dgvdata.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvdata.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
             this.dgvdata.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvdata.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(86)))), ((int)(((byte)(78)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvdata.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(86)))), ((int)(((byte)(78)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvdata.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvdata.ColumnHeadersHeight = 50;
             this.dgvdata.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.FechaRegistro,
@@ -313,30 +304,29 @@
             this.PrecioVenta,
             this.Cantidad,
             this.SubTotal});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(226)))), ((int)(((byte)(244)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvdata.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(226)))), ((int)(((byte)(244)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvdata.DefaultCellStyle = dataGridViewCellStyle7;
             this.dgvdata.DoubleBuffered = true;
             this.dgvdata.EnableHeadersVisualStyles = false;
             this.dgvdata.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
             this.dgvdata.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(86)))), ((int)(((byte)(78)))));
             this.dgvdata.HeaderForeColor = System.Drawing.Color.White;
-            this.dgvdata.Location = new System.Drawing.Point(16, 199);
-            this.dgvdata.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvdata.Location = new System.Drawing.Point(12, 162);
             this.dgvdata.Name = "dgvdata";
             this.dgvdata.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgvdata.RowHeadersVisible = false;
             this.dgvdata.RowHeadersWidth = 51;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.dgvdata.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.dgvdata.RowsDefaultCellStyle = dataGridViewCellStyle8;
             this.dgvdata.RowTemplate.DividerHeight = 1;
             this.dgvdata.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvdata.Size = new System.Drawing.Size(1353, 550);
+            this.dgvdata.Size = new System.Drawing.Size(1106, 618);
             this.dgvdata.TabIndex = 113;
             // 
             // FechaRegistro
@@ -434,11 +424,10 @@
             // 
             this.siticonePictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(61)))), ((int)(((byte)(61)))));
             this.siticonePictureBox1.Image = global::IcoFarma.Properties.Resources.Decrease1;
-            this.siticonePictureBox1.Location = new System.Drawing.Point(40, 27);
-            this.siticonePictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.siticonePictureBox1.Location = new System.Drawing.Point(30, 22);
             this.siticonePictureBox1.Name = "siticonePictureBox1";
             this.siticonePictureBox1.ShadowDecoration.Parent = this.siticonePictureBox1;
-            this.siticonePictureBox1.Size = new System.Drawing.Size(79, 68);
+            this.siticonePictureBox1.Size = new System.Drawing.Size(59, 55);
             this.siticonePictureBox1.TabIndex = 114;
             this.siticonePictureBox1.TabStop = false;
             // 
@@ -454,21 +443,20 @@
             this.btnExcel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnExcel.HoveredState.Parent = this.btnExcel;
             this.btnExcel.Image = global::IcoFarma.Properties.Resources.Microsoft_Excel;
-            this.btnExcel.Location = new System.Drawing.Point(16, 128);
-            this.btnExcel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnExcel.Location = new System.Drawing.Point(12, 104);
             this.btnExcel.Name = "btnExcel";
             this.btnExcel.ShadowDecoration.Parent = this.btnExcel;
-            this.btnExcel.Size = new System.Drawing.Size(227, 44);
+            this.btnExcel.Size = new System.Drawing.Size(170, 36);
             this.btnExcel.TabIndex = 78;
             this.btnExcel.Text = "Exportar en Excel";
             this.btnExcel.Click += new System.EventHandler(this.btnExcel_Click_1);
             // 
             // frmReporteCompras
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.ClientSize = new System.Drawing.Size(1385, 859);
+            this.ClientSize = new System.Drawing.Size(1888, 852);
             this.Controls.Add(this.siticonePictureBox1);
             this.Controls.Add(this.dgvdata);
             this.Controls.Add(this.cbobusqueda);
@@ -484,7 +472,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label10);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmReporteCompras";
             this.Text = "frmReporteCompras";
             this.Load += new System.EventHandler(this.frmReporteCompras_Load);

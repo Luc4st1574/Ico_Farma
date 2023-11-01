@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.cbotipodocumento = new Siticone.UI.WinForms.SiticoneRoundedComboBox();
@@ -148,7 +148,7 @@
             this.txtnombrecliente.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtnombrecliente.HoveredState.Parent = this.txtnombrecliente;
             this.txtnombrecliente.Location = new System.Drawing.Point(255, 33);
-            this.txtnombrecliente.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtnombrecliente.Margin = new System.Windows.Forms.Padding(6);
             this.txtnombrecliente.Name = "txtnombrecliente";
             this.txtnombrecliente.PasswordChar = '\0';
             this.txtnombrecliente.PlaceholderText = "Razon Social";
@@ -185,7 +185,7 @@
             this.txtdocumentocliente.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtdocumentocliente.HoveredState.Parent = this.txtdocumentocliente;
             this.txtdocumentocliente.Location = new System.Drawing.Point(7, 37);
-            this.txtdocumentocliente.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtdocumentocliente.Margin = new System.Windows.Forms.Padding(6);
             this.txtdocumentocliente.Name = "txtdocumentocliente";
             this.txtdocumentocliente.PasswordChar = '\0';
             this.txtdocumentocliente.PlaceholderText = "Nro Documento";
@@ -265,7 +265,7 @@
             this.txtstock.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtstock.HoveredState.Parent = this.txtstock;
             this.txtstock.Location = new System.Drawing.Point(597, 43);
-            this.txtstock.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtstock.Margin = new System.Windows.Forms.Padding(5);
             this.txtstock.Name = "txtstock";
             this.txtstock.PasswordChar = '\0';
             this.txtstock.PlaceholderText = "Stock";
@@ -293,7 +293,7 @@
             this.txtproducto.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtproducto.HoveredState.Parent = this.txtproducto;
             this.txtproducto.Location = new System.Drawing.Point(268, 43);
-            this.txtproducto.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtproducto.Margin = new System.Windows.Forms.Padding(5);
             this.txtproducto.Name = "txtproducto";
             this.txtproducto.PasswordChar = '\0';
             this.txtproducto.PlaceholderText = "Producto";
@@ -321,7 +321,7 @@
             this.txtprecio.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtprecio.HoveredState.Parent = this.txtprecio;
             this.txtprecio.Location = new System.Drawing.Point(481, 43);
-            this.txtprecio.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtprecio.Margin = new System.Windows.Forms.Padding(5);
             this.txtprecio.Name = "txtprecio";
             this.txtprecio.PasswordChar = '\0';
             this.txtprecio.PlaceholderText = "Precio";
@@ -366,7 +366,7 @@
             this.txtcodproducto.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtcodproducto.HoveredState.Parent = this.txtcodproducto;
             this.txtcodproducto.Location = new System.Drawing.Point(5, 43);
-            this.txtcodproducto.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtcodproducto.Margin = new System.Windows.Forms.Padding(5);
             this.txtcodproducto.Name = "txtcodproducto";
             this.txtcodproducto.PasswordChar = '\0';
             this.txtcodproducto.PlaceholderText = "Cod. Producto";
@@ -407,20 +407,20 @@
             // dgvdata
             // 
             this.dgvdata.AllowUserToAddRows = false;
-            dataGridViewCellStyle21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.White;
-            this.dgvdata.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            this.dgvdata.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvdata.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
             this.dgvdata.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvdata.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(86)))), ((int)(((byte)(78)))));
-            dataGridViewCellStyle22.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvdata.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(86)))), ((int)(((byte)(78)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvdata.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvdata.ColumnHeadersHeight = 50;
             this.dgvdata.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.IdProducto,
@@ -429,14 +429,14 @@
             this.Cantidad,
             this.SubTotal,
             this.btneliminar});
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle24.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(226)))), ((int)(((byte)(244)))));
-            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvdata.DefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(226)))), ((int)(((byte)(244)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvdata.DefaultCellStyle = dataGridViewCellStyle4;
             this.dgvdata.DoubleBuffered = true;
             this.dgvdata.EnableHeadersVisualStyles = false;
             this.dgvdata.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
@@ -446,11 +446,11 @@
             this.dgvdata.Name = "dgvdata";
             this.dgvdata.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgvdata.RowHeadersVisible = false;
-            dataGridViewCellStyle25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.dgvdata.RowsDefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.dgvdata.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvdata.RowTemplate.DividerHeight = 1;
             this.dgvdata.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvdata.Size = new System.Drawing.Size(759, 365);
+            this.dgvdata.Size = new System.Drawing.Size(899, 572);
             this.dgvdata.TabIndex = 179;
             this.dgvdata.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvdata_CellContentClick);
             this.dgvdata.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvdata_CellPainting);
@@ -489,12 +489,12 @@
             // 
             // btneliminar
             // 
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.btneliminar.DefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.btneliminar.DefaultCellStyle = dataGridViewCellStyle3;
             this.btneliminar.FillWeight = 57.07051F;
             this.btneliminar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btneliminar.HeaderText = "";
@@ -521,7 +521,7 @@
             this.txttotalpagar.ForeColor = System.Drawing.Color.White;
             this.txttotalpagar.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txttotalpagar.HoveredState.Parent = this.txttotalpagar;
-            this.txttotalpagar.Location = new System.Drawing.Point(813, 396);
+            this.txttotalpagar.Location = new System.Drawing.Point(939, 621);
             this.txttotalpagar.Name = "txttotalpagar";
             this.txttotalpagar.PasswordChar = '\0';
             this.txttotalpagar.PlaceholderText = "";
@@ -540,7 +540,7 @@
             this.btnregistrar.ForeColor = System.Drawing.Color.White;
             this.btnregistrar.HoveredState.Parent = this.btnregistrar;
             this.btnregistrar.Image = global::IcoFarma.Properties.Resources.Price_Tag;
-            this.btnregistrar.Location = new System.Drawing.Point(813, 571);
+            this.btnregistrar.Location = new System.Drawing.Point(939, 796);
             this.btnregistrar.Name = "btnregistrar";
             this.btnregistrar.ShadowDecoration.Parent = this.btnregistrar;
             this.btnregistrar.Size = new System.Drawing.Size(217, 36);
@@ -554,7 +554,7 @@
             this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label10.Location = new System.Drawing.Point(809, 373);
+            this.label10.Location = new System.Drawing.Point(935, 598);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(106, 20);
             this.label10.TabIndex = 182;
@@ -578,7 +578,7 @@
             this.txtpagocon.ForeColor = System.Drawing.Color.White;
             this.txtpagocon.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtpagocon.HoveredState.Parent = this.txtpagocon;
-            this.txtpagocon.Location = new System.Drawing.Point(813, 458);
+            this.txtpagocon.Location = new System.Drawing.Point(939, 683);
             this.txtpagocon.Name = "txtpagocon";
             this.txtpagocon.PasswordChar = '\0';
             this.txtpagocon.PlaceholderText = "";
@@ -595,7 +595,7 @@
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(809, 435);
+            this.label5.Location = new System.Drawing.Point(935, 660);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(80, 20);
             this.label5.TabIndex = 184;
@@ -607,7 +607,7 @@
             this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(809, 497);
+            this.label6.Location = new System.Drawing.Point(935, 722);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(67, 20);
             this.label6.TabIndex = 185;
@@ -631,7 +631,7 @@
             this.txtcambio.ForeColor = System.Drawing.Color.White;
             this.txtcambio.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtcambio.HoveredState.Parent = this.txtcambio;
-            this.txtcambio.Location = new System.Drawing.Point(813, 520);
+            this.txtcambio.Location = new System.Drawing.Point(939, 745);
             this.txtcambio.Name = "txtcambio";
             this.txtcambio.PasswordChar = '\0';
             this.txtcambio.PlaceholderText = "";
@@ -695,7 +695,7 @@
             this.txtfecha.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtfecha.HoveredState.Parent = this.txtfecha;
             this.txtfecha.Location = new System.Drawing.Point(13, 48);
-            this.txtfecha.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtfecha.Margin = new System.Windows.Forms.Padding(5);
             this.txtfecha.Name = "txtfecha";
             this.txtfecha.PasswordChar = '\0';
             this.txtfecha.PlaceholderText = "";
@@ -773,7 +773,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.ClientSize = new System.Drawing.Size(1148, 646);
+            this.ClientSize = new System.Drawing.Size(1888, 852);
             this.Controls.Add(this.siticoneGroupBox2);
             this.Controls.Add(this.siticoneGroupBox1);
             this.Controls.Add(this.siticoneGroupBox3);

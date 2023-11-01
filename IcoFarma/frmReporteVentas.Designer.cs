@@ -191,8 +191,7 @@
             this.dgvdata.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
             this.dgvdata.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(86)))), ((int)(((byte)(78)))));
             this.dgvdata.HeaderForeColor = System.Drawing.Color.White;
-            this.dgvdata.Location = new System.Drawing.Point(16, 193);
-            this.dgvdata.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvdata.Location = new System.Drawing.Point(12, 148);
             this.dgvdata.Name = "dgvdata";
             this.dgvdata.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgvdata.RowHeadersVisible = false;
@@ -201,7 +200,7 @@
             this.dgvdata.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvdata.RowTemplate.DividerHeight = 1;
             this.dgvdata.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvdata.Size = new System.Drawing.Size(1347, 550);
+            this.dgvdata.Size = new System.Drawing.Size(1101, 661);
             this.dgvdata.TabIndex = 128;
             // 
             // Cantidad
@@ -226,11 +225,10 @@
             this.cbobusqueda.HoveredState.Parent = this.cbobusqueda;
             this.cbobusqueda.ItemHeight = 30;
             this.cbobusqueda.ItemsAppearance.Parent = this.cbobusqueda;
-            this.cbobusqueda.Location = new System.Drawing.Point(904, 129);
-            this.cbobusqueda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbobusqueda.Location = new System.Drawing.Point(767, 106);
             this.cbobusqueda.Name = "cbobusqueda";
             this.cbobusqueda.ShadowDecoration.Parent = this.cbobusqueda;
-            this.cbobusqueda.Size = new System.Drawing.Size(185, 36);
+            this.cbobusqueda.Size = new System.Drawing.Size(140, 36);
             this.cbobusqueda.TabIndex = 127;
             // 
             // btnExcel
@@ -245,11 +243,10 @@
             this.btnExcel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnExcel.HoveredState.Parent = this.btnExcel;
             this.btnExcel.Image = global::IcoFarma.Properties.Resources.Microsoft_Excel;
-            this.btnExcel.Location = new System.Drawing.Point(16, 129);
-            this.btnExcel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnExcel.Location = new System.Drawing.Point(12, 105);
             this.btnExcel.Name = "btnExcel";
             this.btnExcel.ShadowDecoration.Parent = this.btnExcel;
-            this.btnExcel.Size = new System.Drawing.Size(227, 44);
+            this.btnExcel.Size = new System.Drawing.Size(170, 36);
             this.btnExcel.TabIndex = 126;
             this.btnExcel.Text = "Exportar en Excel";
             this.btnExcel.Click += new System.EventHandler(this.btnExcel_Click_1);
@@ -264,11 +261,10 @@
             this.btnLimparBusqueda.ForeColor = System.Drawing.Color.White;
             this.btnLimparBusqueda.HoveredState.Parent = this.btnLimparBusqueda;
             this.btnLimparBusqueda.Image = global::IcoFarma.Properties.Resources.Broom;
-            this.btnLimparBusqueda.Location = new System.Drawing.Point(1305, 129);
-            this.btnLimparBusqueda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLimparBusqueda.Location = new System.Drawing.Point(1070, 106);
             this.btnLimparBusqueda.Name = "btnLimparBusqueda";
             this.btnLimparBusqueda.ShadowDecoration.Parent = this.btnLimparBusqueda;
-            this.btnLimparBusqueda.Size = new System.Drawing.Size(57, 44);
+            this.btnLimparBusqueda.Size = new System.Drawing.Size(43, 36);
             this.btnLimparBusqueda.TabIndex = 125;
             this.btnLimparBusqueda.Click += new System.EventHandler(this.btnLimparBusqueda_Click_1);
             // 
@@ -282,11 +278,10 @@
             this.btnBusqueda.ForeColor = System.Drawing.Color.White;
             this.btnBusqueda.HoveredState.Parent = this.btnBusqueda;
             this.btnBusqueda.Image = global::IcoFarma.Properties.Resources.Search;
-            this.btnBusqueda.Location = new System.Drawing.Point(1240, 129);
-            this.btnBusqueda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBusqueda.Location = new System.Drawing.Point(1021, 105);
             this.btnBusqueda.Name = "btnBusqueda";
             this.btnBusqueda.ShadowDecoration.Parent = this.btnBusqueda;
-            this.btnBusqueda.Size = new System.Drawing.Size(57, 44);
+            this.btnBusqueda.Size = new System.Drawing.Size(43, 36);
             this.btnBusqueda.TabIndex = 124;
             this.btnBusqueda.Click += new System.EventHandler(this.btnBusqueda_Click);
             // 
@@ -300,13 +295,12 @@
             this.txtfechainicio.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtfechainicio.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.txtfechainicio.HoveredState.Parent = this.txtfechainicio;
-            this.txtfechainicio.Location = new System.Drawing.Point(276, 38);
-            this.txtfechainicio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtfechainicio.Location = new System.Drawing.Point(219, 31);
             this.txtfechainicio.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.txtfechainicio.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.txtfechainicio.Name = "txtfechainicio";
             this.txtfechainicio.ShadowDecoration.Parent = this.txtfechainicio;
-            this.txtfechainicio.Size = new System.Drawing.Size(175, 44);
+            this.txtfechainicio.Size = new System.Drawing.Size(154, 36);
             this.txtfechainicio.TabIndex = 123;
             this.txtfechainicio.Value = new System.DateTime(2023, 10, 28, 0, 0, 0, 0);
             // 
@@ -320,13 +314,12 @@
             this.txtfechafin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtfechafin.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.txtfechafin.HoveredState.Parent = this.txtfechafin;
-            this.txtfechafin.Location = new System.Drawing.Point(591, 38);
-            this.txtfechafin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtfechafin.Location = new System.Drawing.Point(515, 31);
             this.txtfechafin.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.txtfechafin.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.txtfechafin.Name = "txtfechafin";
             this.txtfechafin.ShadowDecoration.Parent = this.txtfechafin;
-            this.txtfechafin.Size = new System.Drawing.Size(175, 44);
+            this.txtfechafin.Size = new System.Drawing.Size(154, 36);
             this.txtfechafin.TabIndex = 121;
             this.txtfechafin.Value = new System.DateTime(2023, 10, 28, 0, 0, 0, 0);
             // 
@@ -348,14 +341,14 @@
             this.txtbusqueda.ForeColor = System.Drawing.Color.White;
             this.txtbusqueda.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtbusqueda.HoveredState.Parent = this.txtbusqueda;
-            this.txtbusqueda.Location = new System.Drawing.Point(1099, 129);
-            this.txtbusqueda.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtbusqueda.Location = new System.Drawing.Point(914, 106);
+            this.txtbusqueda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtbusqueda.Name = "txtbusqueda";
             this.txtbusqueda.PasswordChar = '\0';
             this.txtbusqueda.PlaceholderText = "Busca Aqui";
             this.txtbusqueda.SelectedText = "";
             this.txtbusqueda.ShadowDecoration.Parent = this.txtbusqueda;
-            this.txtbusqueda.Size = new System.Drawing.Size(133, 44);
+            this.txtbusqueda.Size = new System.Drawing.Size(100, 36);
             this.txtbusqueda.TabIndex = 120;
             // 
             // label2
@@ -364,10 +357,9 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(61)))), ((int)(((byte)(61)))));
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(477, 48);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(411, 39);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 20);
+            this.label2.Size = new System.Drawing.Size(79, 16);
             this.label2.TabIndex = 116;
             this.label2.Text = "Fecha Fin:";
             // 
@@ -377,10 +369,9 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(61)))), ((int)(((byte)(61)))));
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(141, 48);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(106, 39);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(117, 20);
+            this.label1.Size = new System.Drawing.Size(95, 16);
             this.label1.TabIndex = 115;
             this.label1.Text = "Fecha Inicio:";
             // 
@@ -390,10 +381,9 @@
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label10.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.label10.Location = new System.Drawing.Point(16, 11);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Location = new System.Drawing.Point(12, 9);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(1347, 102);
+            this.label10.Size = new System.Drawing.Size(1101, 83);
             this.label10.TabIndex = 114;
             // 
             // btnBuscar
@@ -406,11 +396,10 @@
             this.btnBuscar.ForeColor = System.Drawing.Color.White;
             this.btnBuscar.HoveredState.Parent = this.btnBuscar;
             this.btnBuscar.Image = global::IcoFarma.Properties.Resources.Search;
-            this.btnBuscar.Location = new System.Drawing.Point(773, 38);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBuscar.Location = new System.Drawing.Point(687, 31);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.ShadowDecoration.Parent = this.btnBuscar;
-            this.btnBuscar.Size = new System.Drawing.Size(57, 44);
+            this.btnBuscar.Size = new System.Drawing.Size(43, 36);
             this.btnBuscar.TabIndex = 122;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click_1);
             // 
@@ -418,20 +407,19 @@
             // 
             this.siticonePictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(61)))), ((int)(((byte)(61)))));
             this.siticonePictureBox1.Image = global::IcoFarma.Properties.Resources.Increase1;
-            this.siticonePictureBox1.Location = new System.Drawing.Point(33, 27);
-            this.siticonePictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.siticonePictureBox1.Location = new System.Drawing.Point(25, 22);
             this.siticonePictureBox1.Name = "siticonePictureBox1";
             this.siticonePictureBox1.ShadowDecoration.Parent = this.siticonePictureBox1;
-            this.siticonePictureBox1.Size = new System.Drawing.Size(79, 68);
+            this.siticonePictureBox1.Size = new System.Drawing.Size(59, 55);
             this.siticonePictureBox1.TabIndex = 129;
             this.siticonePictureBox1.TabStop = false;
             // 
             // frmReporteVentas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.ClientSize = new System.Drawing.Size(1379, 850);
+            this.ClientSize = new System.Drawing.Size(1888, 852);
             this.Controls.Add(this.siticonePictureBox1);
             this.Controls.Add(this.dgvdata);
             this.Controls.Add(this.cbobusqueda);
@@ -445,7 +433,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label10);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmReporteVentas";
             this.Text = "frmReporteVentas";
             this.Load += new System.EventHandler(this.frmReporteVentas_Load);

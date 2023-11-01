@@ -225,5 +225,15 @@ namespace IcoFarma
                 }
             }
         }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cboestadox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

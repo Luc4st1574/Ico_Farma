@@ -129,6 +129,11 @@ namespace IcoFarma
                 }
             }
         }
+
+        private void frmDetalleCompras_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

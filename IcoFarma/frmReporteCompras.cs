@@ -175,5 +175,15 @@ namespace IcoFarma
 
             }
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cboproveedor_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
