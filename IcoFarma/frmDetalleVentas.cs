@@ -178,13 +178,20 @@ namespace IcoFarma
 
             RestResponse response = (RestResponse)client.Execute(request);
 
-            string rutaDescarga = @"D:\Descargas";
+            
             string nombreArchivo = txtbusqueda.Text + ".pdf";
-            string pdfFileName = Path.Combine(rutaDescarga, nombreArchivo);
 
-            System.IO.File.WriteAllBytes(pdfFileName, response.RawBytes);
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+            saveFileDialog1.Filter = "Archivos PDF|*.pdf";
+            saveFileDialog1.FileName = nombreArchivo;
 
-            label11.Text = "Archivo PDF descargado con éxito como: " + pdfFileName;
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                string rutaDescarga = saveFileDialog1.FileName;
+                System.IO.File.WriteAllBytes(rutaDescarga, response.RawBytes);
+                label11.Text = "Archivo PDF descargado con éxito como: " + rutaDescarga;
+            }
+
 
 
         }
