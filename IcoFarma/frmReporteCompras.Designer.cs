@@ -48,6 +48,9 @@
             this.btnLimparBusqueda = new Siticone.UI.WinForms.SiticoneRoundedButton();
             this.cbobusqueda = new Siticone.UI.WinForms.SiticoneRoundedComboBox();
             this.dgvdata = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.siticonePictureBox1 = new Siticone.UI.WinForms.SiticonePictureBox();
+            this.btnExcel = new Siticone.UI.WinForms.SiticoneRoundedButton();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.FechaRegistro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TipoDocumento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NumeroDocumento = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -55,15 +58,13 @@
             this.UsuarioRegistro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DocumentoProveedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RazonSocial = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CodigoProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NombreProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Categoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PrecioCompra = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PrecioVenta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SubTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.siticonePictureBox1 = new Siticone.UI.WinForms.SiticonePictureBox();
-            this.btnExcel = new Siticone.UI.WinForms.SiticoneRoundedButton();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdata)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
@@ -115,7 +116,6 @@
             this.label3.Size = new System.Drawing.Size(84, 16);
             this.label3.TabIndex = 26;
             this.label3.Text = "Proveedor:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // cboproveedor
             // 
@@ -137,7 +137,6 @@
             this.cboproveedor.ShadowDecoration.Parent = this.cboproveedor;
             this.cboproveedor.Size = new System.Drawing.Size(140, 36);
             this.cboproveedor.TabIndex = 70;
-            this.cboproveedor.SelectedIndexChanged += new System.EventHandler(this.cboproveedor_SelectedIndexChanged);
             // 
             // txtbusqueda
             // 
@@ -276,6 +275,7 @@
             this.cbobusqueda.ShadowDecoration.Parent = this.cbobusqueda;
             this.cbobusqueda.Size = new System.Drawing.Size(140, 36);
             this.cbobusqueda.TabIndex = 79;
+            this.cbobusqueda.SelectedIndexChanged += new System.EventHandler(this.cbobusqueda_SelectedIndexChanged);
             // 
             // dgvdata
             // 
@@ -304,6 +304,7 @@
             this.UsuarioRegistro,
             this.DocumentoProveedor,
             this.RazonSocial,
+            this.CodigoProducto,
             this.NombreProducto,
             this.Categoria,
             this.PrecioCompra,
@@ -336,6 +337,86 @@
             this.dgvdata.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvdata.Size = new System.Drawing.Size(1106, 618);
             this.dgvdata.TabIndex = 113;
+            // 
+            // siticonePictureBox1
+            // 
+            this.siticonePictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(61)))), ((int)(((byte)(61)))));
+            this.siticonePictureBox1.Image = global::IcoFarma.Properties.Resources.Decrease1;
+            this.siticonePictureBox1.Location = new System.Drawing.Point(30, 22);
+            this.siticonePictureBox1.Name = "siticonePictureBox1";
+            this.siticonePictureBox1.ShadowDecoration.Parent = this.siticonePictureBox1;
+            this.siticonePictureBox1.Size = new System.Drawing.Size(59, 55);
+            this.siticonePictureBox1.TabIndex = 114;
+            this.siticonePictureBox1.TabStop = false;
+            // 
+            // btnExcel
+            // 
+            this.btnExcel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.btnExcel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(86)))), ((int)(((byte)(78)))));
+            this.btnExcel.BorderThickness = 2;
+            this.btnExcel.CheckedState.Parent = this.btnExcel;
+            this.btnExcel.CustomImages.Parent = this.btnExcel;
+            this.btnExcel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.btnExcel.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnExcel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnExcel.HoveredState.Parent = this.btnExcel;
+            this.btnExcel.Image = global::IcoFarma.Properties.Resources.Microsoft_Excel;
+            this.btnExcel.Location = new System.Drawing.Point(12, 104);
+            this.btnExcel.Name = "btnExcel";
+            this.btnExcel.ShadowDecoration.Parent = this.btnExcel;
+            this.btnExcel.Size = new System.Drawing.Size(170, 36);
+            this.btnExcel.TabIndex = 78;
+            this.btnExcel.Text = "Exportar en Excel";
+            this.btnExcel.Click += new System.EventHandler(this.btnExcel_Click_1);
+            // 
+            // chart1
+            // 
+            this.chart1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.chart1.BackImageTransparentColor = System.Drawing.Color.White;
+            this.chart1.BackSecondaryColor = System.Drawing.Color.White;
+            this.chart1.BorderSkin.BackColor = System.Drawing.Color.White;
+            this.chart1.BorderSkin.BackImageTransparentColor = System.Drawing.Color.White;
+            this.chart1.BorderSkin.BackSecondaryColor = System.Drawing.Color.White;
+            this.chart1.BorderSkin.BorderColor = System.Drawing.Color.White;
+            chartArea1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            chartArea1.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            chartArea1.BorderColor = System.Drawing.SystemColors.ButtonHighlight;
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            legend1.BackImageTransparentColor = System.Drawing.Color.White;
+            legend1.BackSecondaryColor = System.Drawing.Color.White;
+            legend1.BorderColor = System.Drawing.Color.White;
+            legend1.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.NotSet;
+            legend1.ForeColor = System.Drawing.Color.White;
+            legend1.HeaderSeparatorColor = System.Drawing.Color.White;
+            legend1.InterlacedRowsColor = System.Drawing.Color.White;
+            legend1.ItemColumnSeparatorColor = System.Drawing.Color.White;
+            legend1.Name = "Legend1";
+            legend1.ShadowColor = System.Drawing.Color.White;
+            legend1.TitleBackColor = System.Drawing.Color.White;
+            legend1.TitleForeColor = System.Drawing.Color.White;
+            legend1.TitleSeparatorColor = System.Drawing.Color.White;
+            this.chart1.Legends.Add(legend1);
+            this.chart1.Location = new System.Drawing.Point(1133, 22);
+            this.chart1.Name = "chart1";
+            this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
+            series1.BackImageTransparentColor = System.Drawing.Color.White;
+            series1.BackSecondaryColor = System.Drawing.Color.White;
+            series1.BorderColor = System.Drawing.Color.Transparent;
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
+            series1.Color = System.Drawing.Color.DodgerBlue;
+            series1.LabelForeColor = System.Drawing.Color.White;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            series1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.BrightPastel;
+            series1.ShadowColor = System.Drawing.Color.White;
+            series1.YValuesPerPoint = 2;
+            this.chart1.Series.Add(series1);
+            this.chart1.Size = new System.Drawing.Size(702, 424);
+            this.chart1.TabIndex = 115;
+            this.chart1.Text = "chart1";
             // 
             // FechaRegistro
             // 
@@ -386,6 +467,11 @@
             this.RazonSocial.Name = "RazonSocial";
             this.RazonSocial.Width = 125;
             // 
+            // CodigoProducto
+            // 
+            this.CodigoProducto.HeaderText = "Codigo Producto";
+            this.CodigoProducto.Name = "CodigoProducto";
+            // 
             // NombreProducto
             // 
             this.NombreProducto.HeaderText = "Nombre Producto";
@@ -427,73 +513,6 @@
             this.SubTotal.MinimumWidth = 6;
             this.SubTotal.Name = "SubTotal";
             this.SubTotal.Width = 125;
-            // 
-            // siticonePictureBox1
-            // 
-            this.siticonePictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(61)))), ((int)(((byte)(61)))));
-            this.siticonePictureBox1.Image = global::IcoFarma.Properties.Resources.Decrease1;
-            this.siticonePictureBox1.Location = new System.Drawing.Point(30, 22);
-            this.siticonePictureBox1.Name = "siticonePictureBox1";
-            this.siticonePictureBox1.ShadowDecoration.Parent = this.siticonePictureBox1;
-            this.siticonePictureBox1.Size = new System.Drawing.Size(59, 55);
-            this.siticonePictureBox1.TabIndex = 114;
-            this.siticonePictureBox1.TabStop = false;
-            // 
-            // btnExcel
-            // 
-            this.btnExcel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.btnExcel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(86)))), ((int)(((byte)(78)))));
-            this.btnExcel.BorderThickness = 2;
-            this.btnExcel.CheckedState.Parent = this.btnExcel;
-            this.btnExcel.CustomImages.Parent = this.btnExcel;
-            this.btnExcel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.btnExcel.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnExcel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnExcel.HoveredState.Parent = this.btnExcel;
-            this.btnExcel.Image = global::IcoFarma.Properties.Resources.Microsoft_Excel;
-            this.btnExcel.Location = new System.Drawing.Point(12, 104);
-            this.btnExcel.Name = "btnExcel";
-            this.btnExcel.ShadowDecoration.Parent = this.btnExcel;
-            this.btnExcel.Size = new System.Drawing.Size(170, 36);
-            this.btnExcel.TabIndex = 78;
-            this.btnExcel.Text = "Exportar en Excel";
-            this.btnExcel.Click += new System.EventHandler(this.btnExcel_Click_1);
-            // 
-            // chart1
-            // 
-            this.chart1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.chart1.BackImageTransparentColor = System.Drawing.Color.White;
-            this.chart1.BackSecondaryColor = System.Drawing.Color.White;
-            chartArea1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            chartArea1.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            chartArea1.BorderColor = System.Drawing.SystemColors.ButtonHighlight;
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            legend1.BackImageTransparentColor = System.Drawing.Color.White;
-            legend1.BackSecondaryColor = System.Drawing.Color.White;
-            legend1.BorderColor = System.Drawing.Color.White;
-            legend1.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.NotSet;
-            legend1.ForeColor = System.Drawing.Color.White;
-            legend1.HeaderSeparatorColor = System.Drawing.Color.White;
-            legend1.InterlacedRowsColor = System.Drawing.Color.White;
-            legend1.ItemColumnSeparatorColor = System.Drawing.Color.White;
-            legend1.Name = "Legend1";
-            legend1.TitleBackColor = System.Drawing.Color.White;
-            legend1.TitleForeColor = System.Drawing.Color.White;
-            legend1.TitleSeparatorColor = System.Drawing.Color.White;
-            this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(1141, 162);
-            this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.LabelForeColor = System.Drawing.Color.White;
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            series1.YValuesPerPoint = 2;
-            this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(702, 424);
-            this.chart1.TabIndex = 115;
-            this.chart1.Text = "chart1";
             // 
             // frmReporteCompras
             // 
@@ -543,6 +562,9 @@
         private Siticone.UI.WinForms.SiticoneRoundedButton btnLimparBusqueda;
         private Siticone.UI.WinForms.SiticoneRoundedComboBox cbobusqueda;
         private Bunifu.Framework.UI.BunifuCustomDataGrid dgvdata;
+        private Siticone.UI.WinForms.SiticonePictureBox siticonePictureBox1;
+        private Siticone.UI.WinForms.SiticoneRoundedButton btnExcel;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.DataGridViewTextBoxColumn FechaRegistro;
         private System.Windows.Forms.DataGridViewTextBoxColumn TipoDocumento;
         private System.Windows.Forms.DataGridViewTextBoxColumn NumeroDocumento;
@@ -550,14 +572,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn UsuarioRegistro;
         private System.Windows.Forms.DataGridViewTextBoxColumn DocumentoProveedor;
         private System.Windows.Forms.DataGridViewTextBoxColumn RazonSocial;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CodigoProducto;
         private System.Windows.Forms.DataGridViewTextBoxColumn NombreProducto;
         private System.Windows.Forms.DataGridViewTextBoxColumn Categoria;
         private System.Windows.Forms.DataGridViewTextBoxColumn PrecioCompra;
         private System.Windows.Forms.DataGridViewTextBoxColumn PrecioVenta;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn SubTotal;
-        private Siticone.UI.WinForms.SiticonePictureBox siticonePictureBox1;
-        private Siticone.UI.WinForms.SiticoneRoundedButton btnExcel;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
     }
 }

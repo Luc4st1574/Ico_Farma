@@ -11,14 +11,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace IcoFarma
 {
     public partial class frmReporteCompras : Form
     {
         public frmReporteCompras()
+
         {
             InitializeComponent();
+            chart1.ChartAreas[0].AxisX.LabelStyle.ForeColor = Color.White;
+
+
+            chart1.ChartAreas[0].AxisY.LabelStyle.ForeColor = Color.White;
         }
 
         private void frmReporteCompras_Load(object sender, EventArgs e)
@@ -176,14 +182,36 @@ namespace IcoFarma
             }
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void LlenarGrafico()
         {
+            // Obtener el campo seleccionado en cbobusqueda
+            string columnaFiltro = ((OpcionCombo)cbobusqueda.SelectedItem).Valor.ToString();
 
+            // Crear una serie de datos para el gráfico
+            Series series = chart1.Series.Add(columnaFiltro);
+            series.ChartType = SeriesChartType.Bar;
+
+            // Llenar la serie con datos de dgvdata
+            foreach (DataGridViewRow row in dgvdata.Rows)
+            {
+                // Asegurarse de que el valor de la celda no sea nulo o vacío antes de agregarlo al gráfico
+                string valor = row.Cells[columnaFiltro].Value?.ToString();
+                if (!string.IsNullOrEmpty(valor))
+                {
+                    double yValue;
+                    if (double.TryParse(valor, out yValue))
+                    {
+                        series.Points.AddXY(row.Index, yValue);
+                        series.Points[row.Index].AxisLabel = row.Cells[0].Value.ToString(); // Usar la fecha como etiqueta en el eje X
+                    }
+                }
+            }
         }
 
-        private void cboproveedor_SelectedIndexChanged(object sender, EventArgs e)
+        private void cbobusqueda_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            chart1.Series.Clear(); 
+            LlenarGrafico();
         }
     }
 }
