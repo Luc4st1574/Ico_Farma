@@ -230,6 +230,11 @@ namespace IcoFarma
         {
 
         }
+
+        private void txtnombrecliente_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

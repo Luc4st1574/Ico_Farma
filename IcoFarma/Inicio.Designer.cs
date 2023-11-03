@@ -52,8 +52,10 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.lblUsu = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.Menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // Menu
@@ -316,7 +318,7 @@
             this.label1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.label1.Font = new System.Drawing.Font("Rockwell Extra Bold", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(12, 13);
+            this.label1.Location = new System.Drawing.Point(83, 13);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(286, 43);
             this.label1.TabIndex = 2;
@@ -337,7 +339,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.pictureBox1.BackgroundImage = global::IcoFarma.Properties.Resources.lg;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(948, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(1742, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(162, 77);
             this.pictureBox1.TabIndex = 3;
@@ -347,11 +349,11 @@
             // 
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblUsuario.Location = new System.Drawing.Point(874, 34);
+            this.lblUsuario.Location = new System.Drawing.Point(1634, 30);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(68, 16);
+            this.lblUsuario.Size = new System.Drawing.Size(102, 22);
             this.lblUsuario.TabIndex = 6;
             this.lblUsuario.Text = "lblUsuario";
             // 
@@ -359,13 +361,24 @@
             // 
             this.lblUsu.AutoSize = true;
             this.lblUsu.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.lblUsu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsu.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsu.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblUsu.Location = new System.Drawing.Point(811, 34);
+            this.lblUsu.Location = new System.Drawing.Point(1549, 30);
             this.lblUsu.Name = "lblUsu";
-            this.lblUsu.Size = new System.Drawing.Size(57, 16);
+            this.lblUsu.Size = new System.Drawing.Size(86, 22);
             this.lblUsu.TabIndex = 5;
             this.lblUsu.Text = "Usuario:";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.pictureBox2.BackgroundImage = global::IcoFarma.Properties.Resources.logo1;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Location = new System.Drawing.Point(14, 5);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(65, 65);
+            this.pictureBox2.TabIndex = 7;
+            this.pictureBox2.TabStop = false;
             // 
             // Inicio
             // 
@@ -373,6 +386,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.lblUsu);
             this.Controls.Add(this.Contenedor);
@@ -391,6 +405,7 @@
             this.Menu.ResumeLayout(false);
             this.Menu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -421,5 +436,6 @@
         private FontAwesome.Sharp.IconMenuItem btnNegocio;
         private FontAwesome.Sharp.IconMenuItem btnrcompras;
         private FontAwesome.Sharp.IconMenuItem btnrventas;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

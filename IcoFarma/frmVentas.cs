@@ -386,5 +386,10 @@ namespace IcoFarma
                 }
             }
         }
+
+        private void txtprecio_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

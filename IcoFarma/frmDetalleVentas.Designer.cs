@@ -156,14 +156,14 @@
             this.txtusuario.ForeColor = System.Drawing.Color.White;
             this.txtusuario.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtusuario.HoveredState.Parent = this.txtusuario;
-            this.txtusuario.Location = new System.Drawing.Point(309, 45);
+            this.txtusuario.Location = new System.Drawing.Point(338, 45);
             this.txtusuario.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.txtusuario.Name = "txtusuario";
             this.txtusuario.PasswordChar = '\0';
             this.txtusuario.PlaceholderText = "";
             this.txtusuario.SelectedText = "";
             this.txtusuario.ShadowDecoration.Parent = this.txtusuario;
-            this.txtusuario.Size = new System.Drawing.Size(222, 36);
+            this.txtusuario.Size = new System.Drawing.Size(238, 35);
             this.txtusuario.TabIndex = 176;
             // 
             // txttipodocumento
@@ -184,14 +184,14 @@
             this.txttipodocumento.ForeColor = System.Drawing.Color.White;
             this.txttipodocumento.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txttipodocumento.HoveredState.Parent = this.txttipodocumento;
-            this.txttipodocumento.Location = new System.Drawing.Point(151, 44);
+            this.txttipodocumento.Location = new System.Drawing.Point(166, 46);
             this.txttipodocumento.Margin = new System.Windows.Forms.Padding(6);
             this.txttipodocumento.Name = "txttipodocumento";
             this.txttipodocumento.PasswordChar = '\0';
             this.txttipodocumento.PlaceholderText = "";
             this.txttipodocumento.SelectedText = "";
             this.txttipodocumento.ShadowDecoration.Parent = this.txttipodocumento;
-            this.txttipodocumento.Size = new System.Drawing.Size(131, 37);
+            this.txttipodocumento.Size = new System.Drawing.Size(157, 34);
             this.txttipodocumento.TabIndex = 175;
             // 
             // txtfecha
@@ -219,13 +219,13 @@
             this.txtfecha.PlaceholderText = "";
             this.txtfecha.SelectedText = "";
             this.txtfecha.ShadowDecoration.Parent = this.txtfecha;
-            this.txtfecha.Size = new System.Drawing.Size(132, 37);
+            this.txtfecha.Size = new System.Drawing.Size(148, 35);
             this.txtfecha.TabIndex = 174;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(306, 23);
+            this.label5.Location = new System.Drawing.Point(335, 26);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(50, 15);
             this.label5.TabIndex = 4;
@@ -234,7 +234,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(148, 22);
+            this.label4.Location = new System.Drawing.Point(156, 26);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(99, 15);
             this.label4.TabIndex = 2;
@@ -243,7 +243,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 23);
+            this.label3.Location = new System.Drawing.Point(1, 25);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(41, 15);
             this.label3.TabIndex = 0;
@@ -255,7 +255,7 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(477, 30);
+            this.label2.Location = new System.Drawing.Point(513, 31);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(125, 20);
             this.label2.TabIndex = 138;
@@ -291,15 +291,16 @@
             this.txtnombrecliente.ForeColor = System.Drawing.Color.White;
             this.txtnombrecliente.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtnombrecliente.HoveredState.Parent = this.txtnombrecliente;
-            this.txtnombrecliente.Location = new System.Drawing.Point(175, 44);
+            this.txtnombrecliente.Location = new System.Drawing.Point(242, 44);
             this.txtnombrecliente.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.txtnombrecliente.Name = "txtnombrecliente";
             this.txtnombrecliente.PasswordChar = '\0';
             this.txtnombrecliente.PlaceholderText = "";
             this.txtnombrecliente.SelectedText = "";
             this.txtnombrecliente.ShadowDecoration.Parent = this.txtnombrecliente;
-            this.txtnombrecliente.Size = new System.Drawing.Size(168, 35);
+            this.txtnombrecliente.Size = new System.Drawing.Size(242, 35);
             this.txtnombrecliente.TabIndex = 178;
+            this.txtnombrecliente.TextChanged += new System.EventHandler(this.txtnombrecliente_TextChanged);
             // 
             // txtdoccliente
             // 
@@ -319,14 +320,14 @@
             this.txtdoccliente.ForeColor = System.Drawing.Color.White;
             this.txtdoccliente.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtdoccliente.HoveredState.Parent = this.txtdoccliente;
-            this.txtdoccliente.Location = new System.Drawing.Point(13, 44);
+            this.txtdoccliente.Location = new System.Drawing.Point(20, 45);
             this.txtdoccliente.Margin = new System.Windows.Forms.Padding(6);
             this.txtdoccliente.Name = "txtdoccliente";
             this.txtdoccliente.PasswordChar = '\0';
             this.txtdoccliente.PlaceholderText = "";
             this.txtdoccliente.SelectedText = "";
             this.txtdoccliente.ShadowDecoration.Parent = this.txtdoccliente;
-            this.txtdoccliente.Size = new System.Drawing.Size(132, 36);
+            this.txtdoccliente.Size = new System.Drawing.Size(184, 35);
             this.txtdoccliente.TabIndex = 177;
             // 
             // txtnumerodocumento
@@ -340,7 +341,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(168, 27);
+            this.label9.Location = new System.Drawing.Point(230, 27);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(94, 15);
             this.label9.TabIndex = 2;
@@ -349,7 +350,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(3, 27);
+            this.label10.Location = new System.Drawing.Point(10, 28);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(73, 15);
             this.label10.TabIndex = 0;
