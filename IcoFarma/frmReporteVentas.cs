@@ -102,6 +102,9 @@ namespace IcoFarma
             }
             chart3.Series.Clear();
             LlenarGraficoPie();
+
+            chart4.Series.Clear();
+            LlenarGraficoPie2();
         }
 
         private void btnExcel_Click_1(object sender, EventArgs e)
@@ -283,51 +286,123 @@ namespace IcoFarma
             }
         }
 
+        public class ProductoPorcentaje
+        {
+            public string Nombre { get; set; }
+            public double Porcentaje { get; set; }
+        }
+
         private void LlenarGraficoPie()
         {
-            Series seriesPie = chart3.Series.Add("Productos");
-            seriesPie.ChartType = SeriesChartType.Pie;
-            seriesPie.Palette = ChartColorPalette.BrightPastel;
-
-            seriesPie.IsValueShownAsLabel = true;
-
-
-            Dictionary<string, int> productosCantidad = new Dictionary<string, int>();
-
+            List<ProductoPorcentaje> productosPorcentajeList = new List<ProductoPorcentaje>();
 
             foreach (DataGridViewRow row in dgvdata.Rows)
             {
                 string producto = row.Cells["NombreProducto"].Value.ToString();
                 if (!string.IsNullOrEmpty(producto))
                 {
-                    if (productosCantidad.ContainsKey(producto))
+                    bool encontrado = false;
+                    foreach (var productoPorcentaje in productosPorcentajeList)
                     {
-                        productosCantidad[producto]++;
+                        if (productoPorcentaje.Nombre == producto)
+                        {
+                            productoPorcentaje.Porcentaje++;
+                            encontrado = true;
+                            break;
+                        }
                     }
-                    else
+                    if (!encontrado)
                     {
-                        productosCantidad[producto] = 1;
+                        productosPorcentajeList.Add(new ProductoPorcentaje
+                        {
+                            Nombre = producto,
+                            Porcentaje = 1
+                        });
                     }
                 }
             }
 
-
             int totalElementos = dgvdata.Rows.Count;
 
+            Series seriesPie = chart3.Series.Add("Productos");
+            seriesPie.ChartType = SeriesChartType.Pie;
+            seriesPie.Palette = ChartColorPalette.BrightPastel;
+            seriesPie.IsValueShownAsLabel = true;
 
-            foreach (var productoCantidad in productosCantidad)
+            foreach (var productoPorcentaje in productosPorcentajeList)
             {
-                double porcentaje = ((double)productoCantidad.Value / totalElementos) * 100.0;
-                seriesPie.Points.AddXY(productoCantidad.Key, porcentaje);
-            }
+                double porcentaje = (productoPorcentaje.Porcentaje / totalElementos);
 
+                // Agregar un punto al gráfico con el porcentaje
+                DataPoint dataPoint = new DataPoint();
+                dataPoint.SetValueY(porcentaje * 100); // Establecer el porcentaje como valor Y
+                dataPoint.AxisLabel = productoPorcentaje.Nombre; // Establecer el nombre del producto como etiqueta
+                dataPoint.LegendText = $"{productoPorcentaje.Nombre} ({porcentaje:P1})"; // Etiqueta en la leyenda con un decimal
+                // Formatear el porcentaje para que aparezca con dos decimales en el gráfico
+                dataPoint.Label = $"{porcentaje:P1}";
+
+                seriesPie.Points.Add(dataPoint);
+            }
 
             chart3.Titles.Add("Distribución de Productos por Porcentaje");
             chart3.Titles[0].ForeColor = Color.White;
-            foreach (DataPoint point in seriesPie.Points)
+
+        }
+
+        private void LlenarGraficoPie2()
+        {
+            List<ProductoPorcentaje> productosPorcentajeList = new List<ProductoPorcentaje>();
+
+            foreach (DataGridViewRow row in dgvdata.Rows)
             {
-                point.Label = $"{point.YValues[0]:0.00}%";
+                string producto = row.Cells["UsuarioRegistro"].Value.ToString();
+                if (!string.IsNullOrEmpty(producto))
+                {
+                    bool encontrado = false;
+                    foreach (var productoPorcentaje in productosPorcentajeList)
+                    {
+                        if (productoPorcentaje.Nombre == producto)
+                        {
+                            productoPorcentaje.Porcentaje++;
+                            encontrado = true;
+                            break;
+                        }
+                    }
+                    if (!encontrado)
+                    {
+                        productosPorcentajeList.Add(new ProductoPorcentaje
+                        {
+                            Nombre = producto,
+                            Porcentaje = 1
+                        });
+                    }
+                }
             }
+
+            int totalElementos = dgvdata.Rows.Count;
+
+            Series seriesPie = chart4.Series.Add("Usuarios");
+            seriesPie.ChartType = SeriesChartType.Pie;
+            seriesPie.Palette = ChartColorPalette.BrightPastel;
+            seriesPie.IsValueShownAsLabel = true;
+
+            foreach (var productoPorcentaje in productosPorcentajeList)
+            {
+                double porcentaje = (productoPorcentaje.Porcentaje / totalElementos);
+
+                // Agregar un punto al gráfico con el porcentaje
+                DataPoint dataPoint = new DataPoint();
+                dataPoint.SetValueY(porcentaje * 100); // Establecer el porcentaje como valor Y
+                dataPoint.AxisLabel = productoPorcentaje.Nombre; // Establecer el nombre del producto como etiqueta
+                dataPoint.LegendText = $"{productoPorcentaje.Nombre} ({porcentaje:P1})"; // Etiqueta en la leyenda con un decimal
+                // Formatear el porcentaje para que aparezca con dos decimales en el gráfico
+                dataPoint.Label = $"{porcentaje:P1}";
+
+                seriesPie.Points.Add(dataPoint);
+            }
+
+            chart4.Titles.Add("Porcentaje de Ventas por Usuario");
+            chart4.Titles[0].ForeColor = Color.White;
 
         }
 
