@@ -226,6 +226,7 @@ namespace IcoFarma
             // Crear una serie de datos para el gráfico
             Series series = chart1.Series.Add(columnaFiltro);
             series.ChartType = SeriesChartType.StackedColumn;
+            series.Palette = ChartColorPalette.BrightPastel;
 
             // Crear un diccionario para realizar un seguimiento de las fechas y sus valores
             Dictionary<string, double> fechaValores = new Dictionary<string, double>();
@@ -270,6 +271,7 @@ namespace IcoFarma
             // Crear una serie de datos para el gráfico
             Series series = chart2.Series.Add(columnaFiltro);
             series.ChartType = SeriesChartType.StackedColumn;
+            series.Palette = ChartColorPalette.BrightPastel;
 
             // Crear un diccionario para realizar un seguimiento de las fechas y sus valores
             Dictionary<string, double> fechaValores = new Dictionary<string, double>();
@@ -310,7 +312,7 @@ namespace IcoFarma
         {
             Series seriesPie = chart3.Series.Add("Productos");
             seriesPie.ChartType = SeriesChartType.Pie;
-
+            seriesPie.Palette = ChartColorPalette.BrightPastel;
             seriesPie.IsValueShownAsLabel = true;
 
 
