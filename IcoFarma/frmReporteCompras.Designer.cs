@@ -28,16 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea9 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend9 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea10 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend10 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea11 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend11 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.label10 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -73,10 +76,13 @@
             this.siticoneLabel2 = new Siticone.UI.WinForms.SiticoneLabel();
             this.cboc2 = new Siticone.UI.WinForms.SiticoneRoundedComboBox();
             this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chart3 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.siticoneLabel3 = new Siticone.UI.WinForms.SiticoneLabel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdata)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart3)).BeginInit();
             this.SuspendLayout();
             // 
             // label10
@@ -87,7 +93,7 @@
             this.label10.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.label10.Location = new System.Drawing.Point(12, 9);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(1106, 83);
+            this.label10.Size = new System.Drawing.Size(850, 83);
             this.label10.TabIndex = 21;
             // 
             // label1
@@ -108,7 +114,7 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(61)))), ((int)(((byte)(61)))));
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(413, 39);
+            this.label2.Location = new System.Drawing.Point(372, 39);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(79, 16);
             this.label2.TabIndex = 25;
@@ -120,7 +126,7 @@
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(61)))), ((int)(((byte)(61)))));
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(829, 39);
+            this.label3.Location = new System.Drawing.Point(650, 14);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(84, 16);
             this.label3.TabIndex = 26;
@@ -141,7 +147,7 @@
             this.cboproveedor.HoveredState.Parent = this.cboproveedor;
             this.cboproveedor.ItemHeight = 30;
             this.cboproveedor.ItemsAppearance.Parent = this.cboproveedor;
-            this.cboproveedor.Location = new System.Drawing.Point(919, 31);
+            this.cboproveedor.Location = new System.Drawing.Point(663, 30);
             this.cboproveedor.Name = "cboproveedor";
             this.cboproveedor.ShadowDecoration.Parent = this.cboproveedor;
             this.cboproveedor.Size = new System.Drawing.Size(140, 36);
@@ -165,7 +171,7 @@
             this.txtbusqueda.ForeColor = System.Drawing.Color.White;
             this.txtbusqueda.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtbusqueda.HoveredState.Parent = this.txtbusqueda;
-            this.txtbusqueda.Location = new System.Drawing.Point(919, 104);
+            this.txtbusqueda.Location = new System.Drawing.Point(663, 104);
             this.txtbusqueda.Margin = new System.Windows.Forms.Padding(4);
             this.txtbusqueda.Name = "txtbusqueda";
             this.txtbusqueda.PasswordChar = '\0';
@@ -185,7 +191,7 @@
             this.txtfechafin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtfechafin.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.txtfechafin.HoveredState.Parent = this.txtfechafin;
-            this.txtfechafin.Location = new System.Drawing.Point(511, 31);
+            this.txtfechafin.Location = new System.Drawing.Point(457, 31);
             this.txtfechafin.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.txtfechafin.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.txtfechafin.Name = "txtfechafin";
@@ -204,7 +210,7 @@
             this.btnBuscar.ForeColor = System.Drawing.Color.White;
             this.btnBuscar.HoveredState.Parent = this.btnBuscar;
             this.btnBuscar.Image = global::IcoFarma.Properties.Resources.Search;
-            this.btnBuscar.Location = new System.Drawing.Point(1065, 31);
+            this.btnBuscar.Location = new System.Drawing.Point(809, 30);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.ShadowDecoration.Parent = this.btnBuscar;
             this.btnBuscar.Size = new System.Drawing.Size(43, 36);
@@ -240,7 +246,7 @@
             this.btnBusqueda.ForeColor = System.Drawing.Color.White;
             this.btnBusqueda.HoveredState.Parent = this.btnBusqueda;
             this.btnBusqueda.Image = global::IcoFarma.Properties.Resources.Search;
-            this.btnBusqueda.Location = new System.Drawing.Point(1025, 104);
+            this.btnBusqueda.Location = new System.Drawing.Point(769, 104);
             this.btnBusqueda.Name = "btnBusqueda";
             this.btnBusqueda.ShadowDecoration.Parent = this.btnBusqueda;
             this.btnBusqueda.Size = new System.Drawing.Size(43, 36);
@@ -257,7 +263,7 @@
             this.btnLimparBusqueda.ForeColor = System.Drawing.Color.White;
             this.btnLimparBusqueda.HoveredState.Parent = this.btnLimparBusqueda;
             this.btnLimparBusqueda.Image = global::IcoFarma.Properties.Resources.Broom;
-            this.btnLimparBusqueda.Location = new System.Drawing.Point(1074, 104);
+            this.btnLimparBusqueda.Location = new System.Drawing.Point(818, 104);
             this.btnLimparBusqueda.Name = "btnLimparBusqueda";
             this.btnLimparBusqueda.ShadowDecoration.Parent = this.btnLimparBusqueda;
             this.btnLimparBusqueda.Size = new System.Drawing.Size(43, 36);
@@ -279,7 +285,7 @@
             this.cbobusqueda.HoveredState.Parent = this.cbobusqueda;
             this.cbobusqueda.ItemHeight = 30;
             this.cbobusqueda.ItemsAppearance.Parent = this.cbobusqueda;
-            this.cbobusqueda.Location = new System.Drawing.Point(773, 104);
+            this.cbobusqueda.Location = new System.Drawing.Point(517, 104);
             this.cbobusqueda.Name = "cbobusqueda";
             this.cbobusqueda.ShadowDecoration.Parent = this.cbobusqueda;
             this.cbobusqueda.Size = new System.Drawing.Size(140, 36);
@@ -288,21 +294,21 @@
             // dgvdata
             // 
             this.dgvdata.AllowUserToAddRows = false;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            this.dgvdata.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.White;
+            this.dgvdata.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
             this.dgvdata.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
             this.dgvdata.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvdata.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(86)))), ((int)(((byte)(78)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvdata.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(86)))), ((int)(((byte)(78)))));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvdata.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
             this.dgvdata.ColumnHeadersHeight = 50;
             this.dgvdata.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.FechaRegistro,
@@ -319,14 +325,14 @@
             this.PrecioVenta,
             this.Cantidad,
             this.SubTotal});
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvdata.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvdata.DefaultCellStyle = dataGridViewCellStyle15;
             this.dgvdata.DoubleBuffered = true;
             this.dgvdata.EnableHeadersVisualStyles = false;
             this.dgvdata.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
@@ -337,13 +343,13 @@
             this.dgvdata.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgvdata.RowHeadersVisible = false;
             this.dgvdata.RowHeadersWidth = 51;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            this.dgvdata.RowsDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.White;
+            this.dgvdata.RowsDefaultCellStyle = dataGridViewCellStyle16;
             this.dgvdata.RowTemplate.DividerHeight = 1;
             this.dgvdata.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvdata.Size = new System.Drawing.Size(1106, 618);
+            this.dgvdata.Size = new System.Drawing.Size(850, 618);
             this.dgvdata.TabIndex = 113;
             // 
             // FechaRegistro
@@ -482,43 +488,43 @@
             this.chart1.BorderSkin.BackImageTransparentColor = System.Drawing.Color.White;
             this.chart1.BorderSkin.BackSecondaryColor = System.Drawing.Color.White;
             this.chart1.BorderSkin.BorderColor = System.Drawing.Color.White;
-            chartArea3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            chartArea3.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            chartArea3.BorderColor = System.Drawing.SystemColors.ButtonHighlight;
-            chartArea3.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea3);
-            legend3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            legend3.BackImageTransparentColor = System.Drawing.Color.White;
-            legend3.BackSecondaryColor = System.Drawing.Color.White;
-            legend3.BorderColor = System.Drawing.Color.White;
-            legend3.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.NotSet;
-            legend3.ForeColor = System.Drawing.Color.White;
-            legend3.HeaderSeparatorColor = System.Drawing.Color.White;
-            legend3.InterlacedRowsColor = System.Drawing.Color.White;
-            legend3.ItemColumnSeparatorColor = System.Drawing.Color.White;
-            legend3.Name = "Legend1";
-            legend3.ShadowColor = System.Drawing.Color.White;
-            legend3.TitleBackColor = System.Drawing.Color.White;
-            legend3.TitleForeColor = System.Drawing.Color.White;
-            legend3.TitleSeparatorColor = System.Drawing.Color.White;
-            this.chart1.Legends.Add(legend3);
-            this.chart1.Location = new System.Drawing.Point(1153, 94);
+            chartArea9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            chartArea9.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            chartArea9.BorderColor = System.Drawing.SystemColors.ButtonHighlight;
+            chartArea9.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea9);
+            legend9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            legend9.BackImageTransparentColor = System.Drawing.Color.White;
+            legend9.BackSecondaryColor = System.Drawing.Color.White;
+            legend9.BorderColor = System.Drawing.Color.White;
+            legend9.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.NotSet;
+            legend9.ForeColor = System.Drawing.Color.White;
+            legend9.HeaderSeparatorColor = System.Drawing.Color.White;
+            legend9.InterlacedRowsColor = System.Drawing.Color.White;
+            legend9.ItemColumnSeparatorColor = System.Drawing.Color.White;
+            legend9.Name = "Legend1";
+            legend9.ShadowColor = System.Drawing.Color.White;
+            legend9.TitleBackColor = System.Drawing.Color.White;
+            legend9.TitleForeColor = System.Drawing.Color.White;
+            legend9.TitleSeparatorColor = System.Drawing.Color.White;
+            this.chart1.Legends.Add(legend9);
+            this.chart1.Location = new System.Drawing.Point(878, 104);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
-            series3.BackImageTransparentColor = System.Drawing.Color.White;
-            series3.BackSecondaryColor = System.Drawing.Color.White;
-            series3.BorderColor = System.Drawing.Color.Transparent;
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
-            series3.Color = System.Drawing.Color.DodgerBlue;
-            series3.LabelForeColor = System.Drawing.Color.White;
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            series3.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.BrightPastel;
-            series3.ShadowColor = System.Drawing.Color.White;
-            series3.YValuesPerPoint = 2;
-            this.chart1.Series.Add(series3);
-            this.chart1.Size = new System.Drawing.Size(549, 314);
+            series9.BackImageTransparentColor = System.Drawing.Color.White;
+            series9.BackSecondaryColor = System.Drawing.Color.White;
+            series9.BorderColor = System.Drawing.Color.Transparent;
+            series9.ChartArea = "ChartArea1";
+            series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
+            series9.Color = System.Drawing.Color.DodgerBlue;
+            series9.LabelForeColor = System.Drawing.Color.White;
+            series9.Legend = "Legend1";
+            series9.Name = "Series1";
+            series9.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.BrightPastel;
+            series9.ShadowColor = System.Drawing.Color.White;
+            series9.YValuesPerPoint = 2;
+            this.chart1.Series.Add(series9);
+            this.chart1.Size = new System.Drawing.Size(509, 314);
             this.chart1.TabIndex = 115;
             this.chart1.Text = "chart1";
             // 
@@ -537,7 +543,7 @@
             this.cboc1.HoveredState.Parent = this.cboc1;
             this.cboc1.ItemHeight = 30;
             this.cboc1.ItemsAppearance.Parent = this.cboc1;
-            this.cboc1.Location = new System.Drawing.Point(1269, 30);
+            this.cboc1.Location = new System.Drawing.Point(994, 40);
             this.cboc1.Name = "cboc1";
             this.cboc1.ShadowDecoration.Parent = this.cboc1;
             this.cboc1.Size = new System.Drawing.Size(233, 36);
@@ -549,7 +555,7 @@
             this.siticoneLabel1.BackColor = System.Drawing.Color.Transparent;
             this.siticoneLabel1.Font = new System.Drawing.Font("Microsoft YaHei UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.siticoneLabel1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.siticoneLabel1.Location = new System.Drawing.Point(1153, 30);
+            this.siticoneLabel1.Location = new System.Drawing.Point(878, 40);
             this.siticoneLabel1.Name = "siticoneLabel1";
             this.siticoneLabel1.Size = new System.Drawing.Size(110, 37);
             this.siticoneLabel1.TabIndex = 117;
@@ -560,7 +566,7 @@
             this.siticoneLabel2.BackColor = System.Drawing.Color.Transparent;
             this.siticoneLabel2.Font = new System.Drawing.Font("Microsoft YaHei UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.siticoneLabel2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.siticoneLabel2.Location = new System.Drawing.Point(1153, 427);
+            this.siticoneLabel2.Location = new System.Drawing.Point(878, 437);
             this.siticoneLabel2.Name = "siticoneLabel2";
             this.siticoneLabel2.Size = new System.Drawing.Size(110, 37);
             this.siticoneLabel2.TabIndex = 119;
@@ -581,7 +587,7 @@
             this.cboc2.HoveredState.Parent = this.cboc2;
             this.cboc2.ItemHeight = 30;
             this.cboc2.ItemsAppearance.Parent = this.cboc2;
-            this.cboc2.Location = new System.Drawing.Point(1269, 428);
+            this.cboc2.Location = new System.Drawing.Point(994, 438);
             this.cboc2.Name = "cboc2";
             this.cboc2.ShadowDecoration.Parent = this.cboc2;
             this.cboc2.Size = new System.Drawing.Size(233, 36);
@@ -597,45 +603,105 @@
             this.chart2.BorderSkin.BackImageTransparentColor = System.Drawing.Color.White;
             this.chart2.BorderSkin.BackSecondaryColor = System.Drawing.Color.White;
             this.chart2.BorderSkin.BorderColor = System.Drawing.Color.White;
-            chartArea4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            chartArea4.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            chartArea4.BorderColor = System.Drawing.SystemColors.ButtonHighlight;
-            chartArea4.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea4);
-            legend4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            legend4.BackImageTransparentColor = System.Drawing.Color.White;
-            legend4.BackSecondaryColor = System.Drawing.Color.White;
-            legend4.BorderColor = System.Drawing.Color.White;
-            legend4.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.NotSet;
-            legend4.ForeColor = System.Drawing.Color.White;
-            legend4.HeaderSeparatorColor = System.Drawing.Color.White;
-            legend4.InterlacedRowsColor = System.Drawing.Color.White;
-            legend4.ItemColumnSeparatorColor = System.Drawing.Color.White;
-            legend4.Name = "Legend1";
-            legend4.ShadowColor = System.Drawing.Color.White;
-            legend4.TitleBackColor = System.Drawing.Color.White;
-            legend4.TitleForeColor = System.Drawing.Color.White;
-            legend4.TitleSeparatorColor = System.Drawing.Color.White;
-            this.chart2.Legends.Add(legend4);
-            this.chart2.Location = new System.Drawing.Point(1153, 485);
+            chartArea10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            chartArea10.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            chartArea10.BorderColor = System.Drawing.SystemColors.ButtonHighlight;
+            chartArea10.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea10);
+            legend10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            legend10.BackImageTransparentColor = System.Drawing.Color.White;
+            legend10.BackSecondaryColor = System.Drawing.Color.White;
+            legend10.BorderColor = System.Drawing.Color.White;
+            legend10.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.NotSet;
+            legend10.ForeColor = System.Drawing.Color.White;
+            legend10.HeaderSeparatorColor = System.Drawing.Color.White;
+            legend10.InterlacedRowsColor = System.Drawing.Color.White;
+            legend10.ItemColumnSeparatorColor = System.Drawing.Color.White;
+            legend10.Name = "Legend1";
+            legend10.ShadowColor = System.Drawing.Color.White;
+            legend10.TitleBackColor = System.Drawing.Color.White;
+            legend10.TitleForeColor = System.Drawing.Color.White;
+            legend10.TitleSeparatorColor = System.Drawing.Color.White;
+            this.chart2.Legends.Add(legend10);
+            this.chart2.Location = new System.Drawing.Point(878, 490);
             this.chart2.Name = "chart2";
             this.chart2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
-            series4.BackImageTransparentColor = System.Drawing.Color.White;
-            series4.BackSecondaryColor = System.Drawing.Color.White;
-            series4.BorderColor = System.Drawing.Color.Transparent;
-            series4.ChartArea = "ChartArea1";
-            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
-            series4.Color = System.Drawing.Color.DodgerBlue;
-            series4.LabelForeColor = System.Drawing.Color.White;
-            series4.Legend = "Legend1";
-            series4.Name = "Series1";
-            series4.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.BrightPastel;
-            series4.ShadowColor = System.Drawing.Color.White;
-            series4.YValuesPerPoint = 2;
-            this.chart2.Series.Add(series4);
-            this.chart2.Size = new System.Drawing.Size(549, 314);
+            series10.BackImageTransparentColor = System.Drawing.Color.White;
+            series10.BackSecondaryColor = System.Drawing.Color.White;
+            series10.BorderColor = System.Drawing.Color.Transparent;
+            series10.ChartArea = "ChartArea1";
+            series10.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
+            series10.Color = System.Drawing.Color.DodgerBlue;
+            series10.LabelForeColor = System.Drawing.Color.White;
+            series10.Legend = "Legend1";
+            series10.Name = "Series1";
+            series10.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.BrightPastel;
+            series10.ShadowColor = System.Drawing.Color.White;
+            series10.YValuesPerPoint = 2;
+            this.chart2.Series.Add(series10);
+            this.chart2.Size = new System.Drawing.Size(509, 314);
             this.chart2.TabIndex = 120;
             this.chart2.Text = "chart2";
+            // 
+            // chart3
+            // 
+            this.chart3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.chart3.BackImageTransparentColor = System.Drawing.Color.White;
+            this.chart3.BackSecondaryColor = System.Drawing.Color.White;
+            this.chart3.BorderSkin.BackColor = System.Drawing.Color.White;
+            this.chart3.BorderSkin.BackImageTransparentColor = System.Drawing.Color.White;
+            this.chart3.BorderSkin.BackSecondaryColor = System.Drawing.Color.White;
+            this.chart3.BorderSkin.BorderColor = System.Drawing.Color.White;
+            chartArea11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            chartArea11.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            chartArea11.BorderColor = System.Drawing.SystemColors.ButtonHighlight;
+            chartArea11.Name = "ChartArea1";
+            this.chart3.ChartAreas.Add(chartArea11);
+            legend11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            legend11.BackImageTransparentColor = System.Drawing.Color.White;
+            legend11.BackSecondaryColor = System.Drawing.Color.White;
+            legend11.BorderColor = System.Drawing.Color.White;
+            legend11.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.NotSet;
+            legend11.ForeColor = System.Drawing.Color.White;
+            legend11.HeaderSeparatorColor = System.Drawing.Color.White;
+            legend11.InterlacedRowsColor = System.Drawing.Color.White;
+            legend11.ItemColumnSeparatorColor = System.Drawing.Color.White;
+            legend11.Name = "Legend1";
+            legend11.ShadowColor = System.Drawing.Color.White;
+            legend11.TitleBackColor = System.Drawing.Color.White;
+            legend11.TitleForeColor = System.Drawing.Color.White;
+            legend11.TitleSeparatorColor = System.Drawing.Color.White;
+            this.chart3.Legends.Add(legend11);
+            this.chart3.Location = new System.Drawing.Point(1422, 294);
+            this.chart3.Name = "chart3";
+            this.chart3.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
+            series11.BackImageTransparentColor = System.Drawing.Color.White;
+            series11.BackSecondaryColor = System.Drawing.Color.White;
+            series11.BorderColor = System.Drawing.Color.Transparent;
+            series11.ChartArea = "ChartArea1";
+            series11.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series11.Color = System.Drawing.Color.DodgerBlue;
+            series11.LabelForeColor = System.Drawing.Color.White;
+            series11.Legend = "Legend1";
+            series11.Name = "Series1";
+            series11.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.BrightPastel;
+            series11.ShadowColor = System.Drawing.Color.White;
+            series11.YValuesPerPoint = 2;
+            this.chart3.Series.Add(series11);
+            this.chart3.Size = new System.Drawing.Size(429, 314);
+            this.chart3.TabIndex = 137;
+            this.chart3.Text = "chart3";
+            // 
+            // siticoneLabel3
+            // 
+            this.siticoneLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.siticoneLabel3.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.siticoneLabel3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.siticoneLabel3.Location = new System.Drawing.Point(1393, 258);
+            this.siticoneLabel3.Name = "siticoneLabel3";
+            this.siticoneLabel3.Size = new System.Drawing.Size(254, 27);
+            this.siticoneLabel3.TabIndex = 138;
+            this.siticoneLabel3.Text = "Productos mas comprados:";
             // 
             // frmReporteCompras
             // 
@@ -643,6 +709,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
             this.ClientSize = new System.Drawing.Size(1888, 852);
+            this.Controls.Add(this.siticoneLabel3);
+            this.Controls.Add(this.chart3);
             this.Controls.Add(this.chart2);
             this.Controls.Add(this.siticoneLabel2);
             this.Controls.Add(this.cboc2);
@@ -671,6 +739,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -713,5 +782,7 @@
         private Siticone.UI.WinForms.SiticoneLabel siticoneLabel2;
         private Siticone.UI.WinForms.SiticoneRoundedComboBox cboc2;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart3;
+        private Siticone.UI.WinForms.SiticoneLabel siticoneLabel3;
     }
 }

@@ -33,6 +33,7 @@ namespace IcoFarma
             chart2.ChartAreas[0].AxisY.LabelStyle.ForeColor = Color.White;
         }
 
+
         private void frmReporteVentas_Load(object sender, EventArgs e)
         {
             foreach (DataGridViewColumn columna in dgvdata.Columns)
@@ -99,6 +100,8 @@ namespace IcoFarma
                     rv.SubTotal
                 });
             }
+            chart3.Series.Clear();
+            LlenarGraficoPie();
         }
 
         private void btnExcel_Click_1(object sender, EventArgs e)
@@ -197,7 +200,7 @@ namespace IcoFarma
 
             // Crear una serie de datos para el gráfico
             Series series = chart1.Series.Add(columnaFiltro);
-            series.ChartType = SeriesChartType.Bar;
+            series.ChartType = SeriesChartType.StackedColumn;
 
             // Crear un diccionario para realizar un seguimiento de las fechas y sus valores
             Dictionary<string, double> fechaValores = new Dictionary<string, double>();
@@ -241,7 +244,7 @@ namespace IcoFarma
 
             // Crear una serie de datos para el gráfico
             Series series = chart2.Series.Add(columnaFiltro);
-            series.ChartType = SeriesChartType.Bar;
+            series.ChartType = SeriesChartType.StackedColumn;
 
             // Crear un diccionario para realizar un seguimiento de las fechas y sus valores
             Dictionary<string, double> fechaValores = new Dictionary<string, double>();
@@ -276,6 +279,53 @@ namespace IcoFarma
             {
                 series.Points.AddXY(fechaValor.Key, fechaValor.Value);
             }
+        }
+
+        private void LlenarGraficoPie()
+        {
+            Series seriesPie = chart3.Series.Add("Productos");
+            seriesPie.ChartType = SeriesChartType.Pie;
+
+            seriesPie.IsValueShownAsLabel = true;
+
+
+            Dictionary<string, int> productosCantidad = new Dictionary<string, int>();
+
+
+            foreach (DataGridViewRow row in dgvdata.Rows)
+            {
+                string producto = row.Cells["NombreProducto"].Value.ToString();
+                if (!string.IsNullOrEmpty(producto))
+                {
+                    if (productosCantidad.ContainsKey(producto))
+                    {
+                        productosCantidad[producto]++;
+                    }
+                    else
+                    {
+                        productosCantidad[producto] = 1;
+                    }
+                }
+            }
+
+
+            int totalElementos = dgvdata.Rows.Count;
+
+
+            foreach (var productoCantidad in productosCantidad)
+            {
+                double porcentaje = ((double)productoCantidad.Value / totalElementos) * 100.0;
+                seriesPie.Points.AddXY(productoCantidad.Key, porcentaje);
+            }
+
+
+            chart3.Titles.Add("Distribución de Productos por Porcentaje");
+            chart3.Titles[0].ForeColor = Color.White;
+            foreach (DataPoint point in seriesPie.Points)
+            {
+                point.Label = $"{point.YValues[0]:0.00}%";
+            }
+
         }
 
         private void cboc1_SelectedIndexChanged(object sender, EventArgs e)
