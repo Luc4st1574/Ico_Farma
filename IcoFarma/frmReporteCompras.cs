@@ -25,6 +25,11 @@ namespace IcoFarma
 
 
             chart1.ChartAreas[0].AxisY.LabelStyle.ForeColor = Color.White;
+
+            chart2.ChartAreas[0].AxisX.LabelStyle.ForeColor = Color.White;
+
+
+            chart2.ChartAreas[0].AxisY.LabelStyle.ForeColor = Color.White;
         }
 
         private void frmReporteCompras_Load(object sender, EventArgs e)
@@ -50,7 +55,35 @@ namespace IcoFarma
             cbobusqueda.ValueMember = "Valor";
             cbobusqueda.SelectedIndex = 0;
 
-       
+            foreach (DataGridViewColumn columna in dgvdata.Columns)
+            {
+
+                if (columna.Visible == true && columna.Name != "FechaRegistro" && columna.Name != "TipoDocumento" 
+                    && columna.Name != "NumeroDocumento" && columna.Name != "UsuarioRegistro" && columna.Name != "DocumentoProveedor" 
+                    && columna.Name != "RazonSocial" && columna.Name != "CodigoProducto" && columna.Name != "NombreProducto" 
+                    && columna.Name != "Categoria")
+                {
+                    cboc1.Items.Add(new OpcionCombo() { Valor = columna.Name, Texto = columna.HeaderText });
+                }
+            }
+            cboc1.DisplayMember = "Texto";
+            cboc1.ValueMember = "Valor";
+            cboc1.SelectedIndex = 0;
+
+            foreach (DataGridViewColumn columna in dgvdata.Columns)
+            {
+
+                if (columna.Visible == true && columna.Name != "FechaRegistro" && columna.Name != "TipoDocumento"
+                    && columna.Name != "NumeroDocumento" && columna.Name != "UsuarioRegistro" && columna.Name != "DocumentoProveedor"
+                    && columna.Name != "RazonSocial" && columna.Name != "CodigoProducto" && columna.Name != "NombreProducto"
+                    && columna.Name != "Categoria")
+                {
+                    cboc2.Items.Add(new OpcionCombo() { Valor = columna.Name, Texto = columna.HeaderText });
+                }
+            }
+            cboc2.DisplayMember = "Texto";
+            cboc2.ValueMember = "Valor";
+            cboc2.SelectedIndex = 0;
 
         }
 
@@ -185,33 +218,101 @@ namespace IcoFarma
         private void LlenarGrafico()
         {
             // Obtener el campo seleccionado en cbobusqueda
-            string columnaFiltro = ((OpcionCombo)cbobusqueda.SelectedItem).Valor.ToString();
+            string columnaFiltro = ((OpcionCombo)cboc1.SelectedItem).Valor.ToString();
 
             // Crear una serie de datos para el gráfico
             Series series = chart1.Series.Add(columnaFiltro);
             series.ChartType = SeriesChartType.Bar;
 
-            // Llenar la serie con datos de dgvdata
+            // Crear un diccionario para realizar un seguimiento de las fechas y sus valores
+            Dictionary<string, double> fechaValores = new Dictionary<string, double>();
+
+            // Llenar el diccionario
             foreach (DataGridViewRow row in dgvdata.Rows)
             {
-                // Asegurarse de que el valor de la celda no sea nulo o vacío antes de agregarlo al gráfico
-                string valor = row.Cells[columnaFiltro].Value?.ToString();
-                if (!string.IsNullOrEmpty(valor))
+                string fechaRegistro = row.Cells[0].Value.ToString();
+                if (!string.IsNullOrEmpty(fechaRegistro))
                 {
-                    double yValue;
-                    if (double.TryParse(valor, out yValue))
+                    if (fechaValores.ContainsKey(fechaRegistro))
                     {
-                        series.Points.AddXY(row.Index, yValue);
-                        series.Points[row.Index].AxisLabel = row.Cells[0].Value.ToString(); // Usar la fecha como etiqueta en el eje X
+                        double valor;
+                        if (double.TryParse(row.Cells[columnaFiltro].Value.ToString(), out valor))
+                        {
+                            fechaValores[fechaRegistro] += valor;
+                        }
+                    }
+                    else
+                    {
+                        double valor;
+                        if (double.TryParse(row.Cells[columnaFiltro].Value.ToString(), out valor))
+                        {
+                            fechaValores[fechaRegistro] = valor;
+                        }
                     }
                 }
             }
+
+            // Agregar las fechas y sus valores al gráfico
+            foreach (var fechaValor in fechaValores)
+            {
+                series.Points.AddXY(fechaValor.Key, fechaValor.Value);
+            }
         }
 
-        private void cbobusqueda_SelectedIndexChanged(object sender, EventArgs e)
+        private void LlenarGrafico2()
         {
-            chart1.Series.Clear(); 
+            // Obtener el campo seleccionado en cbobusqueda
+            string columnaFiltro = ((OpcionCombo)cboc2.SelectedItem).Valor.ToString();
+
+            // Crear una serie de datos para el gráfico
+            Series series = chart2.Series.Add(columnaFiltro);
+            series.ChartType = SeriesChartType.Bar;
+
+            // Crear un diccionario para realizar un seguimiento de las fechas y sus valores
+            Dictionary<string, double> fechaValores = new Dictionary<string, double>();
+
+            // Llenar el diccionario
+            foreach (DataGridViewRow row in dgvdata.Rows)
+            {
+                string fechaRegistro = row.Cells[0].Value.ToString();
+                if (!string.IsNullOrEmpty(fechaRegistro))
+                {
+                    if (fechaValores.ContainsKey(fechaRegistro))
+                    {
+                        double valor;
+                        if (double.TryParse(row.Cells[columnaFiltro].Value.ToString(), out valor))
+                        {
+                            fechaValores[fechaRegistro] += valor;
+                        }
+                    }
+                    else
+                    {
+                        double valor;
+                        if (double.TryParse(row.Cells[columnaFiltro].Value.ToString(), out valor))
+                        {
+                            fechaValores[fechaRegistro] = valor;
+                        }
+                    }
+                }
+            }
+
+            // Agregar las fechas y sus valores al gráfico
+            foreach (var fechaValor in fechaValores)
+            {
+                series.Points.AddXY(fechaValor.Key, fechaValor.Value);
+            }
+        }
+
+        private void cboc1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            chart1.Series.Clear();
             LlenarGrafico();
+        }
+
+        private void cboc2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            chart2.Series.Clear();
+            LlenarGrafico2();
         }
     }
 }

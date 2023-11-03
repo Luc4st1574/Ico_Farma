@@ -147,14 +147,14 @@
             this.txtnombrecliente.ForeColor = System.Drawing.Color.White;
             this.txtnombrecliente.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtnombrecliente.HoveredState.Parent = this.txtnombrecliente;
-            this.txtnombrecliente.Location = new System.Drawing.Point(255, 33);
+            this.txtnombrecliente.Location = new System.Drawing.Point(239, 33);
             this.txtnombrecliente.Margin = new System.Windows.Forms.Padding(6);
             this.txtnombrecliente.Name = "txtnombrecliente";
             this.txtnombrecliente.PasswordChar = '\0';
             this.txtnombrecliente.PlaceholderText = "Razon Social";
             this.txtnombrecliente.SelectedText = "";
             this.txtnombrecliente.ShadowDecoration.Parent = this.txtnombrecliente;
-            this.txtnombrecliente.Size = new System.Drawing.Size(182, 37);
+            this.txtnombrecliente.Size = new System.Drawing.Size(174, 37);
             this.txtnombrecliente.TabIndex = 174;
             // 
             // txtidcliente
@@ -191,7 +191,7 @@
             this.txtdocumentocliente.PlaceholderText = "Nro Documento";
             this.txtdocumentocliente.SelectedText = "";
             this.txtdocumentocliente.ShadowDecoration.Parent = this.txtdocumentocliente;
-            this.txtdocumentocliente.Size = new System.Drawing.Size(182, 32);
+            this.txtdocumentocliente.Size = new System.Drawing.Size(171, 32);
             this.txtdocumentocliente.TabIndex = 174;
             // 
             // btnbuscarclick
@@ -204,7 +204,7 @@
             this.btnbuscarclick.ForeColor = System.Drawing.Color.White;
             this.btnbuscarclick.HoveredState.Parent = this.btnbuscarclick;
             this.btnbuscarclick.Image = global::IcoFarma.Properties.Resources.Search;
-            this.btnbuscarclick.Location = new System.Drawing.Point(202, 33);
+            this.btnbuscarclick.Location = new System.Drawing.Point(187, 33);
             this.btnbuscarclick.Name = "btnbuscarclick";
             this.btnbuscarclick.ShadowDecoration.Parent = this.btnbuscarclick;
             this.btnbuscarclick.Size = new System.Drawing.Size(43, 36);
@@ -271,7 +271,7 @@
             this.txtstock.PlaceholderText = "Stock";
             this.txtstock.SelectedText = "";
             this.txtstock.ShadowDecoration.Parent = this.txtstock;
-            this.txtstock.Size = new System.Drawing.Size(96, 35);
+            this.txtstock.Size = new System.Drawing.Size(113, 35);
             this.txtstock.TabIndex = 177;
             // 
             // txtproducto
@@ -292,14 +292,14 @@
             this.txtproducto.ForeColor = System.Drawing.Color.White;
             this.txtproducto.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtproducto.HoveredState.Parent = this.txtproducto;
-            this.txtproducto.Location = new System.Drawing.Point(268, 43);
+            this.txtproducto.Location = new System.Drawing.Point(227, 42);
             this.txtproducto.Margin = new System.Windows.Forms.Padding(5);
             this.txtproducto.Name = "txtproducto";
             this.txtproducto.PasswordChar = '\0';
             this.txtproducto.PlaceholderText = "Producto";
             this.txtproducto.SelectedText = "";
             this.txtproducto.ShadowDecoration.Parent = this.txtproducto;
-            this.txtproducto.Size = new System.Drawing.Size(182, 33);
+            this.txtproducto.Size = new System.Drawing.Size(165, 33);
             this.txtproducto.TabIndex = 174;
             // 
             // txtprecio
@@ -327,7 +327,7 @@
             this.txtprecio.PlaceholderText = "Precio";
             this.txtprecio.SelectedText = "";
             this.txtprecio.ShadowDecoration.Parent = this.txtprecio;
-            this.txtprecio.Size = new System.Drawing.Size(96, 35);
+            this.txtprecio.Size = new System.Drawing.Size(106, 35);
             this.txtprecio.TabIndex = 176;
             // 
             // buscarproducto
@@ -340,7 +340,7 @@
             this.buscarproducto.ForeColor = System.Drawing.Color.White;
             this.buscarproducto.HoveredState.Parent = this.buscarproducto;
             this.buscarproducto.Image = global::IcoFarma.Properties.Resources.Search;
-            this.buscarproducto.Location = new System.Drawing.Point(217, 43);
+            this.buscarproducto.Location = new System.Drawing.Point(176, 42);
             this.buscarproducto.Name = "buscarproducto";
             this.buscarproducto.ShadowDecoration.Parent = this.buscarproducto;
             this.buscarproducto.Size = new System.Drawing.Size(43, 36);
@@ -372,7 +372,7 @@
             this.txtcodproducto.PlaceholderText = "Cod. Producto";
             this.txtcodproducto.SelectedText = "";
             this.txtcodproducto.ShadowDecoration.Parent = this.txtcodproducto;
-            this.txtcodproducto.Size = new System.Drawing.Size(182, 33);
+            this.txtcodproducto.Size = new System.Drawing.Size(163, 33);
             this.txtcodproducto.TabIndex = 174;
             this.txtcodproducto.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtcodproducto_KeyDown_1);
             // 
@@ -703,7 +703,7 @@
             this.txtfecha.PlaceholderText = "";
             this.txtfecha.SelectedText = "";
             this.txtfecha.ShadowDecoration.Parent = this.txtfecha;
-            this.txtfecha.Size = new System.Drawing.Size(182, 33);
+            this.txtfecha.Size = new System.Drawing.Size(172, 33);
             this.txtfecha.TabIndex = 173;
             // 
             // siticoneGroupBox1
