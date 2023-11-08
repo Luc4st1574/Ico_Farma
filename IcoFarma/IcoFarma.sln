@@ -11,8 +11,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaNegocio", "..\CapaNegoc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaDatos", "..\CapaDatos\CapaDatos.csproj", "{9E78A79D-97CB-41E4-B93C-D9804719C21A}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ICOsetup", "..\ICOsetup\ICOsetup.vdproj", "{3A4658F3-D9BC-42AF-8EDD-152DF8D799A1}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,8 +33,6 @@ Global
 		{9E78A79D-97CB-41E4-B93C-D9804719C21A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E78A79D-97CB-41E4-B93C-D9804719C21A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E78A79D-97CB-41E4-B93C-D9804719C21A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3A4658F3-D9BC-42AF-8EDD-152DF8D799A1}.Debug|Any CPU.ActiveCfg = Debug
-		{3A4658F3-D9BC-42AF-8EDD-152DF8D799A1}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
