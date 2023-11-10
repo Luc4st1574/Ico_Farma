@@ -71,6 +71,7 @@
             this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SubTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.siticoneRoundedButton1 = new Siticone.UI.WinForms.SiticoneRoundedButton();
             this.siticoneGroupBox1.SuspendLayout();
             this.siticoneGroupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdata)).BeginInit();
@@ -373,7 +374,7 @@
             this.btnboleta.ShadowDecoration.Parent = this.btnboleta;
             this.btnboleta.Size = new System.Drawing.Size(170, 36);
             this.btnboleta.TabIndex = 181;
-            this.btnboleta.Text = "Imprimir";
+            this.btnboleta.Text = "Boleta";
             this.btnboleta.Click += new System.EventHandler(this.btnboleta_Click);
             // 
             // label7
@@ -700,12 +701,33 @@
             this.SubTotal.Name = "SubTotal";
             this.SubTotal.Width = 200;
             // 
+            // siticoneRoundedButton1
+            // 
+            this.siticoneRoundedButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.siticoneRoundedButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(86)))), ((int)(((byte)(78)))));
+            this.siticoneRoundedButton1.BorderThickness = 2;
+            this.siticoneRoundedButton1.CheckedState.Parent = this.siticoneRoundedButton1;
+            this.siticoneRoundedButton1.CustomImages.Parent = this.siticoneRoundedButton1;
+            this.siticoneRoundedButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.siticoneRoundedButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.siticoneRoundedButton1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.siticoneRoundedButton1.HoveredState.Parent = this.siticoneRoundedButton1;
+            this.siticoneRoundedButton1.Image = global::IcoFarma.Properties.Resources.PDF;
+            this.siticoneRoundedButton1.Location = new System.Drawing.Point(864, 690);
+            this.siticoneRoundedButton1.Name = "siticoneRoundedButton1";
+            this.siticoneRoundedButton1.ShadowDecoration.Parent = this.siticoneRoundedButton1;
+            this.siticoneRoundedButton1.Size = new System.Drawing.Size(170, 36);
+            this.siticoneRoundedButton1.TabIndex = 198;
+            this.siticoneRoundedButton1.Text = "Factura";
+            this.siticoneRoundedButton1.Click += new System.EventHandler(this.siticoneRoundedButton1_Click);
+            // 
             // frmDetalleVentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
             this.ClientSize = new System.Drawing.Size(1888, 852);
+            this.Controls.Add(this.siticoneRoundedButton1);
             this.Controls.Add(this.dgvdata);
             this.Controls.Add(this.siticoneGroupBox2);
             this.Controls.Add(this.siticoneGroupBox1);
@@ -778,5 +800,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Precio;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn SubTotal;
+        private Siticone.UI.WinForms.SiticoneRoundedButton siticoneRoundedButton1;
     }
 }
