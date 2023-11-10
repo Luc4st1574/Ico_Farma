@@ -86,6 +86,10 @@ namespace IcoFarma
         {
             var client = new RestClient("https://facturacion.apisperu.com/api/v1/invoice/pdf");
             var request = new RestRequest();
+            
+            List<Producto> productos = new CN_Producto().Listar();
+            
+            
             request.Method = Method.POST;
             request.AddHeader("Content-Type", "application/json");
             request.AddHeader("Authorization", "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2OTgxNjcxNTYsImV4cCI6NDg1MTc2NzE1NiwidXNlcm5hbWUiOiJMdWNhc3QiLCJjb21wYW55IjoiMTA3MTEyMTk0MDAifQ.BPcRETd0uWxIQbCY5xjl_MlOIJD73ClHKRqyyb-v6SqgpqNecLAPAKO9dyelD0mM431oNYkBrRFtIvdi6NXU9I_11M-YMruixJTtx5W7h63YcxEATEZ3ZTWmBwc5nd0J_S8nwJ-nUB4dCkf9I32G1t0cysBxlGGbLroSNBq4E1ZkjPBKaWyU5l4SvVTsODoijZjAyPUOaz43UFV-BRwyiLKFOhir8J-seX_zB7ThsM6nbc-edc5Ds6rqBBtu-ITENFTwbEeSjJgJIU8-egnSFPi7YaCKE4ynMg_MH4uGlYKyhuWrRjurxbQUTo50oa0A6dqA6EmlYWOK-oqgTl7dc64Vy0qaRht8hi-ERuC9y54fhNgCR-Djf8Co48eYtihUp1Ad4VIz-_NXM3zd34RMgEfG-z6RvP1PEkTczmodJ9Nd7eESY-sUr8u8_RhkUJAtVtxKgZeligPb4-3Bw1kdnGBmmFnn-BZqWQy_G6B5UGPFYWsJwfIGMlVFPsbrLxfUMVWCOCvvZtAhzvhNAWroEkze9JfPMGuCCrf7yp4r5S_mi4VzWXF1NMz2n9Sj26_TOgbk0FuBPW1frP37jVmybSMZNAfTS50uJvzkuZJrqTt6Z9PXT01bpFrhNigvGvhwgdFN4obYe4VuPZIrnJmWIyjjn6kGASwS-nQactDutLM");
@@ -98,21 +102,22 @@ namespace IcoFarma
                 var precio = Convert.ToDecimal(row.Cells["Precio"].Value);
                 var cantidad = Convert.ToUInt64(row.Cells["Cantidad"].Value);
                 var subtotal = Convert.ToDecimal(row.Cells["SubTotal"].Value);
+                var codProducto = (detailsList.Count + 1).ToString();
 
                 var mtoValorVenta = precio * cantidad;
                 var mtoBaseIgv = mtoValorVenta;
-                var mtoIGV = mtoBaseIgv * Convert.ToDecimal(0.18);
+                var mtoIGV = mtoBaseIgv * Convert.ToDecimal(0.1);
 
                 var detail = new
                 {
-                    codProducto = producto,
+                    codProducto = codProducto,
                     unidad = "NIU",
                     descripcion = producto,
                     cantidad = cantidad,
                     mtoValorUnitario = 0,
                     mtoValorVenta = mtoValorVenta,
                     mtoBaseIgv = mtoBaseIgv,
-                    porcentajeIgv = 18,
+                    porcentajeIgv = 0,
                     igv = 0,
                     tipAfeIgv = 0,
                     totalImpuestos = mtoIGV,
@@ -150,7 +155,7 @@ namespace IcoFarma
                     rznSocial = txtnombrecliente.Text,
                     address = new
                     {
-                        direccion = "",
+                        direccion = "Direccion Predeterminada",
                         provincia = "",
                         departamento = "",
                         distrito = "",
