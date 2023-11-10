@@ -90,18 +90,48 @@ namespace IcoFarma
             request.AddHeader("Content-Type", "application/json");
             request.AddHeader("Authorization", "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2OTgxNjcxNTYsImV4cCI6NDg1MTc2NzE1NiwidXNlcm5hbWUiOiJMdWNhc3QiLCJjb21wYW55IjoiMTA3MTEyMTk0MDAifQ.BPcRETd0uWxIQbCY5xjl_MlOIJD73ClHKRqyyb-v6SqgpqNecLAPAKO9dyelD0mM431oNYkBrRFtIvdi6NXU9I_11M-YMruixJTtx5W7h63YcxEATEZ3ZTWmBwc5nd0J_S8nwJ-nUB4dCkf9I32G1t0cysBxlGGbLroSNBq4E1ZkjPBKaWyU5l4SvVTsODoijZjAyPUOaz43UFV-BRwyiLKFOhir8J-seX_zB7ThsM6nbc-edc5Ds6rqBBtu-ITENFTwbEeSjJgJIU8-egnSFPi7YaCKE4ynMg_MH4uGlYKyhuWrRjurxbQUTo50oa0A6dqA6EmlYWOK-oqgTl7dc64Vy0qaRht8hi-ERuC9y54fhNgCR-Djf8Co48eYtihUp1Ad4VIz-_NXM3zd34RMgEfG-z6RvP1PEkTczmodJ9Nd7eESY-sUr8u8_RhkUJAtVtxKgZeligPb4-3Bw1kdnGBmmFnn-BZqWQy_G6B5UGPFYWsJwfIGMlVFPsbrLxfUMVWCOCvvZtAhzvhNAWroEkze9JfPMGuCCrf7yp4r5S_mi4VzWXF1NMz2n9Sj26_TOgbk0FuBPW1frP37jVmybSMZNAfTS50uJvzkuZJrqTt6Z9PXT01bpFrhNigvGvhwgdFN4obYe4VuPZIrnJmWIyjjn6kGASwS-nQactDutLM");
 
-            var mtoOperGravadas = Convert.ToDecimal(txt_precioxu.Text) * Convert.ToDecimal(txt_cantidad.Text);
-            var mtoIGV = mtoOperGravadas * Convert.ToDecimal(0.18);
+            var detailsList = new List<object>();
 
-            var jsonData = new {
+            foreach (DataGridViewRow row in dgvdata.Rows)
+            {
+                var producto = row.Cells["Producto"].Value?.ToString();
+                var precio = Convert.ToDecimal(row.Cells["Precio"].Value);
+                var cantidad = Convert.ToUInt64(row.Cells["Cantidad"].Value);
+                var subtotal = Convert.ToDecimal(row.Cells["SubTotal"].Value);
+
+                var mtoValorVenta = precio * cantidad;
+                var mtoBaseIgv = mtoValorVenta;
+                var mtoIGV = mtoBaseIgv * Convert.ToDecimal(0.18);
+
+                var detail = new
+                {
+                    codProducto = producto,
+                    unidad = "NIU",
+                    descripcion = producto,
+                    cantidad = cantidad,
+                    mtoValorUnitario = 0,
+                    mtoValorVenta = mtoValorVenta,
+                    mtoBaseIgv = mtoBaseIgv,
+                    porcentajeIgv = 18,
+                    igv = 0,
+                    tipAfeIgv = 0,
+                    totalImpuestos = mtoIGV,
+                    mtoPrecioUnitario = precio
+                };
+
+                detailsList.Add(detail);
+            }
+
+            var jsonData = new
+            {
                 ublVersion = "2.1",
                 fecVencimiento = dateTime.ToString("yyyy-MM-ddTHH:mm:sszzz"),
                 tipoOperacion = "0101",
                 tipoDoc = "01",
                 serie = "F002",
-                correlativo = txtbusqueda.Text, 
+                correlativo = txtbusqueda.Text,
                 fechaEmision = dateTime.ToString("yyyy-MM-ddTHH:mm:sszzz"),
-                
+
                 formaPago = new
                 {
                     moneda = "PEN",
@@ -123,7 +153,7 @@ namespace IcoFarma
                         ubigueo = ""
                     }
                 },
-                
+
                 company = new
                 {
                     ruc = 10711219400,
@@ -138,47 +168,30 @@ namespace IcoFarma
                         ubigueo = "130201"
                     }
                 },
-                mtoOperGravadas = mtoOperGravadas,
+                mtoOperGravadas = 0,
                 mtoOperExoneradas = 0,
-                
-                mtoIGV = mtoIGV,
+
+                mtoIGV = 0,
                 totalImpuestos = 0,
                 valorVenta = 0,
                 subTotal = 0,
-                mtoImpVenta = mtoIGV + mtoOperGravadas,
-                details = new[]
+                mtoImpVenta = 0,
+                details = detailsList.ToArray(),
+                legends = new[]
                 {
-                    new
-                    {
-                        codProducto = txtbusqueda.Text,
-                        unidad = "NIU",
-                        descripcion = txt_producto.Text,
-                        cantidad = Convert.ToUInt64(txt_cantidad.Text),//cantidad
-                        mtoValorUnitario = 0,
-                        mtoValorVenta = mtoOperGravadas, //valortotal
-                        mtoBaseIgv = mtoOperGravadas, //valortotal
-                        porcentajeIgv = 18,
-                        igv = 0, //sacarigv
-                        tipAfeIgv = 0,
-                        totalImpuestos = mtoIGV, //sacarigv
-                        mtoPrecioUnitario = Convert.ToDecimal(txt_precioxu.Text) //precio
-                    },
-                },
-                            legends = new[]
-                {
-                    new
-                    {
-                        code = "1000",
-                       value = "SON "+mtoIGV.ToString() + mtoOperGravadas.ToString()+"/100 SOLES"
-                    }
-                }
+            new
+            {
+                code = "1000",
+                value = $"SON 0/100 SOLES"
+            }
+        }
             };
+
             string jsonBody = Newtonsoft.Json.JsonConvert.SerializeObject(jsonData);
             request.AddParameter("application/json", jsonBody, ParameterType.RequestBody);
 
             RestResponse response = (RestResponse)client.Execute(request);
 
-            
             string nombreArchivo = txtbusqueda.Text + ".pdf";
 
             SaveFileDialog saveFileDialog1 = new SaveFileDialog();

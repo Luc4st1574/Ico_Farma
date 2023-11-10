@@ -57,10 +57,6 @@
             this.txtmontopago = new Siticone.UI.WinForms.SiticoneRoundedTextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txtmontocambio = new Siticone.UI.WinForms.SiticoneRoundedTextBox();
-            this.txt_precioxu = new System.Windows.Forms.TextBox();
-            this.txt_subtotal = new System.Windows.Forms.TextBox();
-            this.txt_producto = new System.Windows.Forms.TextBox();
-            this.txt_cantidad = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.siticoneGroupBox1 = new Siticone.UI.WinForms.SiticoneGroupBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -72,6 +68,10 @@
             this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SubTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.siticoneRoundedButton1 = new Siticone.UI.WinForms.SiticoneRoundedButton();
+            this.txt_precioxu = new System.Windows.Forms.TextBox();
+            this.txt_subtotal = new System.Windows.Forms.TextBox();
+            this.txt_producto = new System.Windows.Forms.TextBox();
+            this.txt_cantidad = new System.Windows.Forms.TextBox();
             this.siticoneGroupBox1.SuspendLayout();
             this.siticoneGroupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdata)).BeginInit();
@@ -374,7 +374,7 @@
             this.btnboleta.ShadowDecoration.Parent = this.btnboleta;
             this.btnboleta.Size = new System.Drawing.Size(170, 36);
             this.btnboleta.TabIndex = 181;
-            this.btnboleta.Text = "Boleta";
+            this.btnboleta.Text = "Factura";
             this.btnboleta.Click += new System.EventHandler(this.btnboleta_Click);
             // 
             // label7
@@ -500,38 +500,6 @@
             this.txtmontocambio.Size = new System.Drawing.Size(85, 34);
             this.txtmontocambio.TabIndex = 187;
             this.txtmontocambio.TextChanged += new System.EventHandler(this.txtmontocambio_TextChanged);
-            // 
-            // txt_precioxu
-            // 
-            this.txt_precioxu.Location = new System.Drawing.Point(864, 95);
-            this.txt_precioxu.Name = "txt_precioxu";
-            this.txt_precioxu.Size = new System.Drawing.Size(100, 20);
-            this.txt_precioxu.TabIndex = 188;
-            this.txt_precioxu.Visible = false;
-            // 
-            // txt_subtotal
-            // 
-            this.txt_subtotal.Location = new System.Drawing.Point(970, 69);
-            this.txt_subtotal.Name = "txt_subtotal";
-            this.txt_subtotal.Size = new System.Drawing.Size(100, 20);
-            this.txt_subtotal.TabIndex = 189;
-            this.txt_subtotal.Visible = false;
-            // 
-            // txt_producto
-            // 
-            this.txt_producto.Location = new System.Drawing.Point(864, 69);
-            this.txt_producto.Name = "txt_producto";
-            this.txt_producto.Size = new System.Drawing.Size(100, 20);
-            this.txt_producto.TabIndex = 190;
-            this.txt_producto.Visible = false;
-            // 
-            // txt_cantidad
-            // 
-            this.txt_cantidad.Location = new System.Drawing.Point(970, 95);
-            this.txt_cantidad.Name = "txt_cantidad";
-            this.txt_cantidad.Size = new System.Drawing.Size(100, 20);
-            this.txt_cantidad.TabIndex = 191;
-            this.txt_cantidad.Visible = false;
             // 
             // label11
             // 
@@ -718,8 +686,40 @@
             this.siticoneRoundedButton1.ShadowDecoration.Parent = this.siticoneRoundedButton1;
             this.siticoneRoundedButton1.Size = new System.Drawing.Size(170, 36);
             this.siticoneRoundedButton1.TabIndex = 198;
-            this.siticoneRoundedButton1.Text = "Factura";
+            this.siticoneRoundedButton1.Text = "Boleta";
             this.siticoneRoundedButton1.Click += new System.EventHandler(this.siticoneRoundedButton1_Click);
+            // 
+            // txt_precioxu
+            // 
+            this.txt_precioxu.Location = new System.Drawing.Point(864, 95);
+            this.txt_precioxu.Name = "txt_precioxu";
+            this.txt_precioxu.Size = new System.Drawing.Size(100, 20);
+            this.txt_precioxu.TabIndex = 188;
+            this.txt_precioxu.Visible = false;
+            // 
+            // txt_subtotal
+            // 
+            this.txt_subtotal.Location = new System.Drawing.Point(970, 69);
+            this.txt_subtotal.Name = "txt_subtotal";
+            this.txt_subtotal.Size = new System.Drawing.Size(100, 20);
+            this.txt_subtotal.TabIndex = 189;
+            this.txt_subtotal.Visible = false;
+            // 
+            // txt_producto
+            // 
+            this.txt_producto.Location = new System.Drawing.Point(864, 69);
+            this.txt_producto.Name = "txt_producto";
+            this.txt_producto.Size = new System.Drawing.Size(100, 20);
+            this.txt_producto.TabIndex = 190;
+            this.txt_producto.Visible = false;
+            // 
+            // txt_cantidad
+            // 
+            this.txt_cantidad.Location = new System.Drawing.Point(970, 95);
+            this.txt_cantidad.Name = "txt_cantidad";
+            this.txt_cantidad.Size = new System.Drawing.Size(100, 20);
+            this.txt_cantidad.TabIndex = 191;
+            this.txt_cantidad.Visible = false;
             // 
             // frmDetalleVentas
             // 
@@ -786,10 +786,6 @@
         private Siticone.UI.WinForms.SiticoneRoundedTextBox txtmontopago;
         private System.Windows.Forms.Label label8;
         private Siticone.UI.WinForms.SiticoneRoundedTextBox txtmontocambio;
-        private System.Windows.Forms.TextBox txt_precioxu;
-        private System.Windows.Forms.TextBox txt_subtotal;
-        private System.Windows.Forms.TextBox txt_producto;
-        private System.Windows.Forms.TextBox txt_cantidad;
         private System.Windows.Forms.Label label11;
         private Siticone.UI.WinForms.SiticoneGroupBox siticoneGroupBox1;
         private System.Windows.Forms.Label label12;
@@ -801,5 +797,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn SubTotal;
         private Siticone.UI.WinForms.SiticoneRoundedButton siticoneRoundedButton1;
+        private System.Windows.Forms.TextBox txt_precioxu;
+        private System.Windows.Forms.TextBox txt_subtotal;
+        private System.Windows.Forms.TextBox txt_producto;
+        private System.Windows.Forms.TextBox txt_cantidad;
     }
 }
