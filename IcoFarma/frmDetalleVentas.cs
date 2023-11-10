@@ -122,6 +122,10 @@ namespace IcoFarma
                 detailsList.Add(detail);
             }
 
+            // Corregir la obtención de mtoValorVenta y totalImpuestos
+            var mtoOperGravadas = detailsList.Sum(detail => (decimal)detail.GetType().GetProperty("mtoValorVenta").GetValue(detail));
+            var totalImpuestos = detailsList.Sum(detail => (decimal)detail.GetType().GetProperty("totalImpuestos").GetValue(detail));
+
             var jsonData = new
             {
                 ublVersion = "2.1",
@@ -168,23 +172,23 @@ namespace IcoFarma
                         ubigueo = "130201"
                     }
                 },
-                mtoOperGravadas = 0,
-                mtoOperExoneradas = 0,
+                mtoOperGravadas = mtoOperGravadas,
+                mtoOperExoneradas = 0, // Puedes ajustar esto según tus necesidades
 
-                mtoIGV = 0,
-                totalImpuestos = 0,
-                valorVenta = 0,
-                subTotal = 0,
-                mtoImpVenta = 0,
+                mtoIGV = totalImpuestos,
+                totalImpuestos = totalImpuestos, // Puedes ajustar esto según tus necesidades
+                valorVenta = mtoOperGravadas + totalImpuestos, // Puedes ajustar esto según tus necesidades
+                subTotal = mtoOperGravadas,
+                mtoImpVenta = mtoOperGravadas + totalImpuestos,
                 details = detailsList.ToArray(),
                 legends = new[]
                 {
-            new
-            {
-                code = "1000",
-                value = $"SON 0/100 SOLES"
-            }
-        }
+                    new
+                    {
+                        code = "1000",
+                        value = $"SON {totalImpuestos.ToString()} {mtoOperGravadas.ToString()}/100 SOLES"
+                    }
+                }
             };
 
             string jsonBody = Newtonsoft.Json.JsonConvert.SerializeObject(jsonData);
@@ -204,9 +208,6 @@ namespace IcoFarma
                 System.IO.File.WriteAllBytes(rutaDescarga, response.RawBytes);
                 label11.Text = "Archivo PDF descargado con éxito como: " + rutaDescarga;
             }
-
-
-
         }
 
        
