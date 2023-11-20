@@ -102,9 +102,11 @@ namespace IcoFarma
             }
             chart3.Series.Clear();
             LlenarGraficoPie();
+            chart3.Titles.Clear();
 
             chart4.Series.Clear();
             LlenarGraficoPie2();
+            chart4.Titles.Clear();
         }
 
         private void btnExcel_Click_1(object sender, EventArgs e)
