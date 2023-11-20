@@ -678,7 +678,7 @@
             legend3.TitleForeColor = System.Drawing.Color.White;
             legend3.TitleSeparatorColor = System.Drawing.Color.White;
             this.chart3.Legends.Add(legend3);
-            this.chart3.Location = new System.Drawing.Point(1417, 104);
+            this.chart3.Location = new System.Drawing.Point(1388, 104);
             this.chart3.Name = "chart3";
             this.chart3.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
             series3.BackImageTransparentColor = System.Drawing.Color.White;

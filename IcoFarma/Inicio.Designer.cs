@@ -118,7 +118,7 @@
             this.btnCategoria.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(86)))), ((int)(((byte)(77)))));
             this.btnCategoria.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnCategoria.Name = "btnCategoria";
-            this.btnCategoria.Size = new System.Drawing.Size(125, 22);
+            this.btnCategoria.Size = new System.Drawing.Size(184, 26);
             this.btnCategoria.Text = "Categoria";
             this.btnCategoria.Click += new System.EventHandler(this.btnCategoria_Click);
             // 
@@ -129,7 +129,7 @@
             this.btnProductos.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(86)))), ((int)(((byte)(77)))));
             this.btnProductos.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnProductos.Name = "btnProductos";
-            this.btnProductos.Size = new System.Drawing.Size(125, 22);
+            this.btnProductos.Size = new System.Drawing.Size(184, 26);
             this.btnProductos.Text = "Producto";
             this.btnProductos.Click += new System.EventHandler(this.btnProductos_Click);
             // 
@@ -140,7 +140,7 @@
             this.btnNegocio.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(86)))), ((int)(((byte)(77)))));
             this.btnNegocio.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnNegocio.Name = "btnNegocio";
-            this.btnNegocio.Size = new System.Drawing.Size(125, 22);
+            this.btnNegocio.Size = new System.Drawing.Size(184, 26);
             this.btnNegocio.Text = "Negocio";
             this.btnNegocio.Click += new System.EventHandler(this.btnNegocio_Click);
             // 
@@ -170,7 +170,7 @@
             this.btnRegistrarCompra.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(86)))), ((int)(((byte)(77)))));
             this.btnRegistrarCompra.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnRegistrarCompra.Name = "btnRegistrarCompra";
-            this.btnRegistrarCompra.Size = new System.Drawing.Size(129, 22);
+            this.btnRegistrarCompra.Size = new System.Drawing.Size(184, 26);
             this.btnRegistrarCompra.Text = "Registrar";
             this.btnRegistrarCompra.Click += new System.EventHandler(this.btnRegistrarCompra_Click);
             // 
@@ -182,7 +182,7 @@
             this.btnVerDetalle.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(86)))), ((int)(((byte)(77)))));
             this.btnVerDetalle.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnVerDetalle.Name = "btnVerDetalle";
-            this.btnVerDetalle.Size = new System.Drawing.Size(129, 22);
+            this.btnVerDetalle.Size = new System.Drawing.Size(184, 26);
             this.btnVerDetalle.Text = "Ver Detalle";
             this.btnVerDetalle.Click += new System.EventHandler(this.btnVerDetalle_Click);
             // 
@@ -211,7 +211,7 @@
             this.btnRegistrar.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(86)))), ((int)(((byte)(77)))));
             this.btnRegistrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(129, 22);
+            this.btnRegistrar.Size = new System.Drawing.Size(184, 26);
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
@@ -223,7 +223,7 @@
             this.btnDetalle.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(86)))), ((int)(((byte)(77)))));
             this.btnDetalle.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnDetalle.Name = "btnDetalle";
-            this.btnDetalle.Size = new System.Drawing.Size(129, 22);
+            this.btnDetalle.Size = new System.Drawing.Size(184, 26);
             this.btnDetalle.Text = "Ver Detalle";
             this.btnDetalle.Click += new System.EventHandler(this.btnDetalle_Click);
             // 
@@ -283,7 +283,7 @@
             this.btnrcompras.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(86)))), ((int)(((byte)(77)))));
             this.btnrcompras.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnrcompras.Name = "btnrcompras";
-            this.btnrcompras.Size = new System.Drawing.Size(166, 22);
+            this.btnrcompras.Size = new System.Drawing.Size(184, 26);
             this.btnrcompras.Text = "Reporte Compras";
             this.btnrcompras.Click += new System.EventHandler(this.btnrcompras_Click);
             // 
@@ -295,7 +295,7 @@
             this.btnrventas.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(86)))), ((int)(((byte)(77)))));
             this.btnrventas.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnrventas.Name = "btnrventas";
-            this.btnrventas.Size = new System.Drawing.Size(166, 22);
+            this.btnrventas.Size = new System.Drawing.Size(184, 26);
             this.btnrventas.Text = "Reporte Ventas";
             this.btnrventas.Click += new System.EventHandler(this.btnrventas_Click);
             // 

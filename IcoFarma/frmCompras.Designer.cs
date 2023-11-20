@@ -66,15 +66,15 @@
             this.label6 = new System.Windows.Forms.Label();
             this.siticoneGroupBox1 = new Siticone.UI.WinForms.SiticoneGroupBox();
             this.siticoneGroupBox2 = new Siticone.UI.WinForms.SiticoneGroupBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.siticoneGroupBox3 = new Siticone.UI.WinForms.SiticoneGroupBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.txtcantidad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdata)).BeginInit();
             this.siticoneGroupBox1.SuspendLayout();
@@ -399,7 +399,7 @@
             this.txtcodproducto.ForeColor = System.Drawing.Color.White;
             this.txtcodproducto.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtcodproducto.HoveredState.Parent = this.txtcodproducto;
-            this.txtcodproducto.Location = new System.Drawing.Point(20, 45);
+            this.txtcodproducto.Location = new System.Drawing.Point(13, 46);
             this.txtcodproducto.Margin = new System.Windows.Forms.Padding(5);
             this.txtcodproducto.Name = "txtcodproducto";
             this.txtcodproducto.PasswordChar = '\0';
@@ -659,6 +659,24 @@
             this.siticoneGroupBox2.Size = new System.Drawing.Size(508, 89);
             this.siticoneGroupBox2.TabIndex = 200;
             // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(245, 27);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(76, 15);
+            this.label14.TabIndex = 201;
+            this.label14.Text = "Razon Social:";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(10, 28);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(96, 15);
+            this.label13.TabIndex = 200;
+            this.label13.Text = "Nro Documento:";
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -699,34 +717,14 @@
             this.siticoneGroupBox3.Size = new System.Drawing.Size(899, 89);
             this.siticoneGroupBox3.TabIndex = 201;
             // 
-            // label4
+            // label12
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(86)))), ((int)(((byte)(78)))));
-            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(10, 3);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(146, 15);
-            this.label4.TabIndex = 195;
-            this.label4.Text = "Informacion del Producto:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(17, 29);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(87, 15);
-            this.label7.TabIndex = 196;
-            this.label7.Text = "Cod. Producto:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(243, 28);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(59, 15);
-            this.label8.TabIndex = 197;
-            this.label8.Text = "Producto:";
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(566, 28);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(75, 15);
+            this.label12.TabIndex = 199;
+            this.label12.Text = "Precio Venta:";
             // 
             // label9
             // 
@@ -737,32 +735,34 @@
             this.label9.TabIndex = 198;
             this.label9.Text = "Precio Compra:";
             // 
-            // label12
+            // label8
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(566, 28);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(75, 15);
-            this.label12.TabIndex = 199;
-            this.label12.Text = "Precio Venta:";
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(243, 28);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(59, 15);
+            this.label8.TabIndex = 197;
+            this.label8.Text = "Producto:";
             // 
-            // label13
+            // label7
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(10, 28);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(96, 15);
-            this.label13.TabIndex = 200;
-            this.label13.Text = "Nro Documento:";
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(17, 29);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(87, 15);
+            this.label7.TabIndex = 196;
+            this.label7.Text = "Cod. Producto:";
             // 
-            // label14
+            // label4
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(245, 27);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(76, 15);
-            this.label14.TabIndex = 201;
-            this.label14.Text = "Razon Social:";
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(86)))), ((int)(((byte)(78)))));
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label4.Location = new System.Drawing.Point(10, 3);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(146, 15);
+            this.label4.TabIndex = 195;
+            this.label4.Text = "Informacion del Producto:";
             // 
             // frmCompras
             // 
