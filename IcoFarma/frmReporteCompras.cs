@@ -127,9 +127,11 @@ namespace IcoFarma
             }
             chart3.Series.Clear(); // Limpiar las series existentes antes de agregar una nueva serie
             LlenarGraficoPie();
+            chart3.Titles.Clear();
 
             chart4.Series.Clear();
             LlenarGraficoPie2();
+            chart4.Titles.Clear();
         }
 
         private void btnBusqueda_Click(object sender, EventArgs e)
